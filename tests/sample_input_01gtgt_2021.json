@@ -1,0 +1,78 @@
+{
+  "declaration_type": "01_GTGT_2021",
+  "meta": {
+    "first_time": "X",
+    "revision_number": ""
+  },
+  "tax_period": {
+    "type": "month",
+    "month": 12,
+    "year": 2024
+  },
+  "taxpayer": {
+    "name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ MỚI",
+    "tax_code": "0101234567",
+    "address": "Tầng 1, Tòa nhà Tech, Quận Cầu Giấy, Hà Nội",
+    "phone": "0988777666"
+  },
+  "agency": {
+    "name": "ĐẠI LÝ THUẾ ABC",
+    "tax_code": "0209876543",
+    "contract_number": "123/HDL-2024",
+    "contract_date": "01/01/2024"
+  },
+  "branch": {
+    "name": "CHI NHÁNH HẢI PHÒNG",
+    "tax_code": "0101234567-001",
+    "address": {
+      "ward": "Phường Minh Khai",
+      "district": "Quận Hồng Bàng",
+      "province": "Hải Phòng"
+    }
+  },
+  "business": {
+    "activity_name": "Sản xuất phần mềm",
+    "scale": "lon",
+    "method": "khau_tru"
+  },
+  "tax_calc": {
+    "no_activity": "",
+    "deductible_previous": 5000000,
+    "input_purchases": {
+      "value": 150000000,
+      "vat": 15000000,
+      "imports": {
+        "value": 20000000,
+        "vat": 2000000
+      }
+    },
+    "deductible_period": 15000000,
+    "output_sales": {
+      "non_vat": 0,
+      "vat_0": 0,
+      "vat_5": {
+        "value": 0,
+        "vat": 0
+      },
+      "vat_10": {
+        "value": 300000000,
+        "vat": 30000000
+      },
+      "not_taxed": 10000000
+    },
+    "output_total": {
+      "value": 300000000,
+      "vat": 30000000
+    },
+    "vat_period": 15000000,
+    "adjustment_decrease": 0,
+    "adjustment_increase": 0,
+    "vat_received_deduction": 0,
+    "vat_payable_period": 10000000,
+    "vat_investment_offset": 0,
+    "vat_payable_final": 10000000,
+    "vat_remaining_unpaid": 0,
+    "vat_refund_claim": 0,
+    "vat_transfer_next": 0
+  }
+}

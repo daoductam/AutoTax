@@ -1,0 +1,61 @@
+{
+  "F_01a_ten_hoat_dong_sxkd": { "path": "business.activity_name" },
+  "F_01b_ky_tinh_thue":       { "path": "tax_period", "format": "month_year" },
+
+  "F_02_lan_dau":             { "path": "meta.first_time" },
+  "F_03_bo_sung_lan_thu":     { "path": "meta.revision_number" },
+
+  "F_04_ten_nguoi_nop_thue":  { "path": "taxpayer.name" },
+  "F_05_ma_so_thue":          { "path": "taxpayer.tax_code" },
+
+  "F_06_ten_dai_ly_thue":     { "path": "agency.name" },
+  "F_07_mst_dai_ly_thue":     { "path": "agency.tax_code" },
+
+  "F_08_so_hop_dong_dai_ly":  { "path": "agency.contract_number" },
+  "F_08_ngay_hop_dong_dai_ly":{ "path": "agency.contract_date" },
+
+  "F_09_ten_don_vi_phu_thuoc":{ "path": "branch.name" },
+  "F_10_mst_don_vi_phu_thuoc":{ "path": "branch.tax_code" },
+
+  "F_11a_phuong_xa":          { "path": "branch.address.ward" },
+  "F_11b_quan_huyen":         { "path": "branch.address.district" },
+  "F_11c_tinh_thanh_pho":     { "path": "branch.address.province" },
+
+  "F_21":  { "path": "tax_calc.no_activity" },
+  "F_22":  { "path": "tax_calc.deductible_previous" },
+
+  "F_23":  { "path": "tax_calc.input_purchases.value" },
+  "F_24":  { "path": "tax_calc.input_purchases.vat" },
+  "F_23a": { "path": "tax_calc.input_purchases.imports.value" },
+  "F_24a": { "path": "tax_calc.input_purchases.imports.vat" },
+
+  "F_25":  { "path": "tax_calc.deductible_period" },
+
+  "F_26":  { "path": "tax_calc.output_sales.non_vat" },
+  "F_29":  { "path": "tax_calc.output_sales.vat_0" },
+  "F_30":  { "path": "tax_calc.output_sales.vat_5.value" },
+  "F_31":  { "path": "tax_calc.output_sales.vat_5.vat" },
+  "F_32":  { "path": "tax_calc.output_sales.vat_10.value" },
+  "F_33":  { "path": "tax_calc.output_sales.vat_10.vat" },
+  "F_32a": { "path": "tax_calc.output_sales.not_taxed" },
+
+  "F_27":  { "path": "tax_calc.output_total.value" },
+  "F_28":  { "path": "tax_calc.output_total.vat" },
+
+  "F_34":  { "path": "tax_calc.output_total.value" },
+  "F_35":  { "path": "tax_calc.output_total.vat" },
+
+  "F_36":  { "path": "tax_calc.vat_period" },
+
+  "F_37":  { "path": "tax_calc.adjustment_decrease" },
+  "F_38":  { "path": "tax_calc.adjustment_increase" },
+  "F_39a": { "path": "tax_calc.vat_received_deduction" },
+
+  "F_40a": { "path": "tax_calc.vat_payable_period" },
+  "F_40b": { "path": "tax_calc.vat_investment_offset" },
+  "F_40":  { "path": "tax_calc.vat_payable_final" },
+
+  "F_41":  { "path": "tax_calc.vat_remaining_unpaid" },
+  "F_42":  { "path": "tax_calc.vat_refund_claim" },
+  "F_43":  { "path": "tax_calc.vat_transfer_next" }
+}

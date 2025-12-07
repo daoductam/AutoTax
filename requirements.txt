@@ -1,0 +1,4 @@
+pydantic>=2.8.0
+Jinja2>=3.1.0
+docxtpl>=0.16.0
+docx2pdf>=0.1.8
