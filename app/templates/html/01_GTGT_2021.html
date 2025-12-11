@@ -1,1364 +1,4232 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      <!--
+       /* Font Definitions */
+       @font-face {
+        font-family: Wingdings;
+        panose-1: 5 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "MS Mincho";
+        panose-1: 2 2 6 9 4 2 5 8 3 4;
+      }
+      @font-face {
+        font-family: Batang;
+        panose-1: 2 3 6 0 0 1 1 1 1 1;
+      }
+      @font-face {
+        font-family: SimSun;
+        panose-1: 2 1 6 0 3 1 1 1 1 1;
+      }
+      @font-face {
+        font-family: "MS Gothic";
+        panose-1: 2 11 6 9 7 2 5 8 2 4;
+      }
+      @font-face {
+        font-family: "Angsana New";
+        panose-1: 2 2 6 3 5 4 5 2 3 4;
+      }
+      @font-face {
+        font-family: "Cordia New";
+        panose-1: 2 11 3 4 2 2 2 2 2 4;
+      }
+      @font-face {
+        font-family: "Cambria Math";
+        panose-1: 2 4 5 3 5 4 6 3 2 4;
+      }
+      @font-face {
+        font-family: Calibri;
+        panose-1: 2 15 5 2 2 2 4 3 2 4;
+      }
+      @font-face {
+        font-family: "Calibri Light";
+        panose-1: 2 15 3 2 2 2 4 3 2 4;
+      }
+      @font-face {
+        font-family: Verdana;
+        panose-1: 2 11 6 4 3 5 4 4 2 4;
+      }
+      @font-face {
+        font-family: "Arial Unicode MS";
+        panose-1: 2 11 6 4 2 2 2 2 2 4;
+      }
+      @font-face {
+        font-family: "\.VnTimeH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnTime";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "MS UI Gothic";
+        panose-1: 2 11 6 0 7 2 5 8 2 4;
+      }
+      @font-face {
+        font-family: Tahoma;
+        panose-1: 2 11 6 4 3 5 4 4 2 4;
+      }
+      @font-face {
+        font-family: VnTime;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Times New Roman Bold";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: Cambria;
+        panose-1: 2 4 5 3 5 4 6 3 2 4;
+      }
+      @font-face {
+        font-family: PdTime;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnArial Narrow";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnArialH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnHelvetInsH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Arial\,";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: PdTimeH;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnAvantH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnCentury Schoolbook";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnArial";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnVogue";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnCentury SchoolbookH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnAvant";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnBlackH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: VnHelveticaU;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: VnHelvetica;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Caslon 540 LT Std";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Myriad Pro Light";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: VNI-Times;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnCourier";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnGothic";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "VNI Times";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.Vn3DH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Muc mon";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnCourier NewH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnVogueH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: VNSVNI2;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: AGaramond;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnClarendonH";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: VNAvantH;
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "\.VnHelvetIns";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Vn Arial HBold";
+        panose-1: 0 0 0 0 0 0 0 0 0 0;
+      }
+      @font-face {
+        font-family: "Arial Narrow";
+        panose-1: 2 11 6 6 2 2 2 3 2 4;
+      }
+      @font-face {
+        font-family: Consolas;
+        panose-1: 2 11 6 9 2 2 4 3 2 4;
+      }
+      @font-face {
+        font-family: "Microsoft Sans Serif";
+        panose-1: 2 11 6 4 2 2 2 2 2 4;
+      }
+      @font-face {
+        font-family: "Arial Black";
+        panose-1: 2 11 10 4 2 1 2 2 2 4;
+      }
+      @font-face {
+        font-family: "Trebuchet MS";
+        panose-1: 2 11 6 3 2 2 2 2 2 4;
+      }
+      @font-face {
+        font-family: "Century Gothic";
+        panose-1: 2 11 5 2 2 2 2 2 2 4;
+      }
+      @font-face {
+        font-family: Garamond;
+        panose-1: 2 2 4 4 3 3 1 1 8 3;
+      }
+      @font-face {
+        font-family: Georgia;
+        panose-1: 2 4 5 2 5 4 5 2 3 3;
+      }
+      @font-face {
+        font-family: "Malgun Gothic";
+        panose-1: 2 11 5 3 2 0 0 2 0 4;
+      }
+      @font-face {
+        font-family: Gungsuh;
+      }
+      @font-face {
+        font-family: "\@Gungsuh";
+      }
+      @font-face {
+        font-family: "\@Batang";
+        panose-1: 2 3 6 0 0 1 1 1 1 1;
+      }
+      @font-face {
+        font-family: "\@MS Mincho";
+        panose-1: 2 2 6 9 4 2 5 8 3 4;
+      }
+      @font-face {
+        font-family: "\@SimSun";
+        panose-1: 2 1 6 0 3 1 1 1 1 1;
+      }
+      @font-face {
+        font-family: "\@MS Gothic";
+        panose-1: 2 11 6 9 7 2 5 8 2 4;
+      }
+      /* Style Definitions */
+      p.MsoNormal,
+      li.MsoNormal,
+      div.MsoNormal {
+        margin-top: 0in;
+        margin-right: 0in;
+        margin-bottom: 0in;
+        margin-left: -0.05pt;
+        text-indent: -0.05pt;
+        font-size: 12pt;
+        font-family: "Times New Roman", serif;
+        position: relative;
+        top: 0.5pt;
+      }
+      .MsoChpDefault {
+        font-size: 14pt;
+      }
+      /* Page Definitions */
+      @page WordSection1 {
+        size: 595.35pt 842pt;
+        margin: 56.7pt 56.7pt 39.7pt 56.7pt;
+      }
+      div.WordSection1 {
+        page: WordSection1;
+      }
+      /* List Definitions */
+      ol {
+        margin-bottom: 0in;
+      }
+      ul {
+        margin-bottom: 0in;
+      }
+      -->
+      /* Th√™m v√†o trong th·∫ª <style> */
+    .mst-box {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 22px;
+        font-weight: bold;
+        font-size: 12pt;
+        vertical-align: middle;
+      }
+      /* Class ƒë·ªÉ b·ªè vi·ªÅn ph·∫£i (d√πng cho c√°c √¥ li·ªÅn nhau) */
+      .no-border-right {
+        border-right: none;
+      }
+    </style>
+  </head>
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:Wingdings;
-	panose-1:5 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:Batang;
-	panose-1:2 3 6 0 0 1 1 1 1 1;}
-@font-face
-	{font-family:SimSun;
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:"MS Gothic";
-	panose-1:2 11 6 9 7 2 5 8 2 4;}
-@font-face
-	{font-family:"Angsana New";
-	panose-1:2 2 6 3 5 4 5 2 3 4;}
-@font-face
-	{font-family:"Cordia New";
-	panose-1:2 11 3 4 2 2 2 2 2 4;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:"Calibri Light";
-	panose-1:2 15 3 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Verdana;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:"Arial Unicode MS";
-	panose-1:2 11 6 4 2 2 2 2 2 4;}
-@font-face
-	{font-family:"\.VnTimeH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnTime";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"MS UI Gothic";
-	panose-1:2 11 6 0 7 2 5 8 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
-@font-face
-	{font-family:VnTime;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Times New Roman Bold";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:PdTime;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnArial Narrow";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnArialH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnHelvetInsH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Arial\,";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:PdTimeH;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnAvantH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnCentury Schoolbook";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnArial";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnVogue";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnCentury SchoolbookH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnAvant";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnBlackH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:VnHelveticaU;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:VnHelvetica;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Caslon 540 LT Std";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Myriad Pro Light";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:VNI-Times;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnCourier";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnGothic";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"VNI Times";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.Vn3DH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Muc mon";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnCourier NewH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnVogueH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:VNSVNI2;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:AGaramond;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnClarendonH";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:VNAvantH;
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"\.VnHelvetIns";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Vn Arial HBold";
-	panose-1:0 0 0 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"Arial Narrow";
-	panose-1:2 11 6 6 2 2 2 3 2 4;}
-@font-face
-	{font-family:Consolas;
-	panose-1:2 11 6 9 2 2 4 3 2 4;}
-@font-face
-	{font-family:"Microsoft Sans Serif";
-	panose-1:2 11 6 4 2 2 2 2 2 4;}
-@font-face
-	{font-family:"Arial Black";
-	panose-1:2 11 10 4 2 1 2 2 2 4;}
-@font-face
-	{font-family:"Trebuchet MS";
-	panose-1:2 11 6 3 2 2 2 2 2 4;}
-@font-face
-	{font-family:"Century Gothic";
-	panose-1:2 11 5 2 2 2 2 2 2 4;}
-@font-face
-	{font-family:Garamond;
-	panose-1:2 2 4 4 3 3 1 1 8 3;}
-@font-face
-	{font-family:Georgia;
-	panose-1:2 4 5 2 5 4 5 2 3 3;}
-@font-face
-	{font-family:"Malgun Gothic";
-	panose-1:2 11 5 3 2 0 0 2 0 4;}
-@font-face
-	{font-family:Gungsuh;}
-@font-face
-	{font-family:"\@Gungsuh";}
-@font-face
-	{font-family:"\@Batang";
-	panose-1:2 3 6 0 0 1 1 1 1 1;}
-@font-face
-	{font-family:"\@MS Mincho";
-	panose-1:2 2 6 9 4 2 5 8 3 4;}
-@font-face
-	{font-family:"\@SimSun";
-	panose-1:2 1 6 0 3 1 1 1 1 1;}
-@font-face
-	{font-family:"\@MS Gothic";
-	panose-1:2 11 6 9 7 2 5 8 2 4;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:0in;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:-.05pt;
-	text-indent:-.05pt;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	position:relative;
-	top:.5pt;}
-.MsoChpDefault
-	{font-size:14.0pt;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.35pt 842.0pt;
-	margin:56.7pt 56.7pt 39.7pt 56.7pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0in;}
-ul
-	{margin-bottom:0in;}
--->
-</style>
+  <body lang="EN-US" link="blue" vlink="purple" style="word-wrap: break-word">
+    <div class="WordSection1">
+      <div style="position: relative; width: 100%; margin-bottom: 20px">
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            font-size: 10pt;
+          "
+        >
+          <b>M·∫´u s·ªë: 01/GTGT</b><br />
+          <i
+            >(Ban h√†nh k√®m theo Th√¥ng t∆∞ s·ªë 80/2021/TT-BTC ng√†y 29 th√°ng 9 nƒÉm
+            2021 c·ªßa B·ªô tr∆∞·ªüng B·ªô T√†i ch√≠nh)</i
+          >
+        </div>
+      </div>
 
-</head>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
+      >
+        &nbsp;
+      </p>
 
-<body lang=EN-US link=blue vlink=purple style='word-wrap:break-word'>
+      <br clear="ALL" />
 
-<div class=WordSection1>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="
+          margin-top: 50px;
+          margin-left: 0in;
+          text-align: center;
+          text-indent: -0.1pt;
+        "
+      >
+        <b>C&#7896;NG H√íA X√É H&#7896;I CH&#7910; NGH&#296;A VI&#7878;T NAM</b>
+      </p>
 
-<p class=MsoNormal align=center style='margin-left:0in;text-align:center;
-text-indent:-.1pt'><span style='position:relative;z-index:251658240'><span
-style='left:0px;position:absolute;left:683px;top:-52px;width:338px;height:106px'><img
-width=225 height=71 src="01_GTGT_2021_template_files/image001.png"
-alt="M&#7851;u s&#7889;: 01/GTGT&#13;&#10;(Ban h‡nh kËm theo ThÙng t&#432; s&#7889; 80/2021/TT-BTC ng‡y 29 th·ng 9 n&#259;m 2021 c&#7911;a B&#7897; tr&#432;&#7903;ng B&#7897; T‡i chÌnh)&#13;&#10;&#13;&#10;&#13;&#10;"></span></span>&nbsp;</p>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
+      >
+        <b>&#272;&#7897;c l&#7853;p - T&#7921; do - H&#7841;nh ph√∫c</b>
+      </p>
 
-<p class=MsoNormal align=center style='margin-left:0in;text-align:center;
-text-indent:-.1pt'>&nbsp;</p>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="
+          margin-top: 12pt;
+          margin-right: 0in;
+          margin-bottom: 0in;
+          margin-left: 0.05pt;
+          margin-bottom: 0.0001pt;
+          text-align: center;
+          text-indent: -0.15pt;
+        "
+      >
+        <b
+          ><span style="font-size: 13pt"
+            >T&#7900; KHAI THU&#7870; GI√Å TR&#7882; GIA T&#258;NG</span
+          ></b
+        ><span
+          style="
+            position: absolute;
+            z-index: 251659264;
+            left: 0px;
+            margin-left: 349px;
+            margin-top: 46px;
+            width: 2px;
+            height: 4px;
+          "
+          ><img
+            width="1"
+            height="3"
+            src="01_GTGT_2021_template_files/image002.png"
+        /></span>
+      </p>
 
-<br clear=ALL>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="
+          margin-left: 0.05pt;
+          text-align: center;
+          text-indent: -0.15pt;
+          line-height: normal;
+          border: none;
+        "
+      >
+        <i
+          ><span style="font-size: 13pt; color: black"
+            >(√Åp d&#7909;ng &#273;&#7889;i v&#7899;i ng&#432;&#7901;i n&#7897;p
+            thu&#7871; t√≠nh thu&#7871; theo ph&#432;&#417;ng ph√°p kh&#7845;u
+            tr&#7915; c√≥ ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
+            doanh)</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal align=center style='margin-left:0in;text-align:center;
-text-indent:-.1pt'><b>C&#7896;NG H“A X√ H&#7896;I CH&#7910; NGH&#296;A
-VI&#7878;T NAM</b></p>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="
+          margin-top: 0in;
+          margin-right: 0in;
+          margin-bottom: 6pt;
+          margin-left: 0.05pt;
+          text-align: center;
+          text-indent: -0.15pt;
+          line-height: normal;
+          border: none;
+        "
+      >
+        <b><span style="font-size: 13pt; color: black">[01a]</span></b
+        ><span style="font-size: 13pt; color: black">
+          T√™n ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh:
+          {{F_01a_ten_hoat_dong_sxkd}}</span
+        >
+      </p>
 
-<p class=MsoNormal align=center style='margin-left:0in;text-align:center;
-text-indent:-.1pt'><b>&#272;&#7897;c l&#7853;p - T&#7921; do - H&#7841;nh ph˙c</b></p>
+      <p
+        class="MsoNormal"
+        align="center"
+        style="
+          margin-left: 0.05pt;
+          text-align: center;
+          text-indent: -0.15pt;
+          line-height: normal;
+          border: none;
+        "
+      >
+        <b><span style="font-size: 13pt; color: black">[01b]</span></b
+        ><span style="font-size: 13pt; color: black">
+          K&#7923; t√≠nh thu&#7871;: {{F_01b_ky_tinh_thue}}</span
+        >
+      </p>
 
-<p class=MsoNormal align=center style='margin-top:12.0pt;margin-right:0in;
-margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-text-indent:-.15pt'><b><span style='font-size:13.0pt'>T&#7900; KHAI THU&#7870;
-GI¡ TR&#7882; GIA T&#258;NG</span></b><span style='position:absolute;
-z-index:251659264;left:0px;margin-left:349px;margin-top:46px;width:2px;
-height:4px'><img width=1 height=3 src="01_GTGT_2021_template_files/image002.png"></span></p>
+      <div align="center">
+        <table
+          class="a"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          width="362"
+          style="border-collapse: collapse"
+        >
+          <tr style="height: 20.1pt">
+            <td
+              width="167"
+              style="width: 125pt; padding: 0in 5.4pt 0in 5.4pt; height: 20.1pt"
+            >
+              <p
+                class="MsoNormal"
+                align="center"
+                style="
+                  margin-left: 0.05pt;
+                  text-align: center;
+                  text-indent: -0.15pt;
+                "
+              >
+                <b><span style="font-size: 13pt">[02]</span></b
+                ><span style="font-size: 13pt">
+                  L&#7847;n &#273;&#7847;u:¬† </span
+                >¬†{{F_02_lan_dau}}
+              </p>
+            </td>
+            <td
+              width="196"
+              style="
+                width: 146.8pt;
+                padding: 0in 5.4pt 0in 5.4pt;
+                height: 20.1pt;
+              "
+            >
+              <p
+                class="MsoNormal"
+                align="center"
+                style="
+                  margin-left: 0.05pt;
+                  text-align: center;
+                  text-indent: -0.15pt;
+                "
+              >
+                <b><span style="font-size: 13pt">[03]</span></b
+                ><span style="font-size: 13pt">
+                  B&#7893; sung l&#7847;n th&#7913;: </span
+                >¬†{{F_03_bo_sung_lan_thu}}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
 
-<p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-text-indent:-.15pt;line-height:normal;border:none'><i><span style='font-size:
-13.0pt;color:black'>(¡p d&#7909;ng &#273;&#7889;i v&#7899;i ng&#432;&#7901;i
-n&#7897;p thu&#7871; tÌnh thu&#7871; theo ph&#432;&#417;ng ph·p kh&#7845;u
-tr&#7915; cÛ ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh)</span></i></p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 6pt;
+          margin-left: 0.05pt;
+          text-indent: -0.15pt;
+        "
+      >
+        <b
+          ><span style="font-size: 13pt"
+            >[04] T√™n ng&#432;&#7901;i n&#7897;p thu&#7871;:</span
+          ></b
+        >
+        {{F_04_ten_nguoi_nop_thue}}
+      </p>
 
-<p class=MsoNormal align=center style='margin-top:0in;margin-right:0in;
-margin-bottom:6.0pt;margin-left:.05pt;text-align:center;text-indent:-.15pt;
-line-height:normal;border:none'><b><span style='font-size:13.0pt;color:black'>[01a]</span></b><span
-style='font-size:13.0pt;color:black'> TÍn ho&#7841;t &#273;&#7897;ng s&#7843;n
-xu&#7845;t kinh doanh: {{F_01a_ten_hoat_dong_sxkd}}</span></p>
+      <p
+        class="MsoNormal"
+        style="margin: 6pt 0; display: flex; align-items: center"
+      >
+        <b><span style="font-size: 13pt">[05]</span></b>
+        <span style="font-size: 13pt; margin-right: 10px"
+          >&nbsp;M√£ s·ªë thu·∫ø:
+        </span>
 
-<p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-text-indent:-.15pt;line-height:normal;border:none'><b><span style='font-size:
-13.0pt;color:black'>[01b]</span></b><span style='font-size:13.0pt;color:black'>
-K&#7923; tÌnh thu&#7871;: {{F_01b_ky_tinh_thue}}</span></p>
+        <span style="display: inline-flex; align-items: center">
+          {# 1. L√†m s·∫°ch m√£ s·ªë thu·∫ø #} {% set mst_raw = F_05_ma_so_thue |
+          replace('-', '') | replace(' ', '') %} {# 2. V·∫Ω 10 √¥ ƒë·∫ßu ti√™n #} {%
+          for i in range(10) %}
+          <span class="mst-box {{ 'no-border-right' if i < 9 else '' }}">
+            {{ mst_raw[i] if i < mst_raw|length else '' }}
+          </span>
+          {% endfor %} {# 3. Kho·∫£ng c√°ch #}
+          <span
+            style="
+              display: inline-block;
+              width: 22px;
+              text-align: center;
+              font-size: 13pt;
+            "
+          >
+          </span>
 
-<div align=center>
+          {# 4. V·∫Ω 3 √¥ cu·ªëi c√πng #} {% for i in range(10, 13) %}
+          <span class="mst-box {{ 'no-border-right' if i < 12 else '' }}">
+            {{ mst_raw[i] if i < mst_raw|length else '' }}
+          </span>
+          {% endfor %}
+        </span>
+      </p>
 
-<table class=a border=0 cellspacing=0 cellpadding=0 width=362 style='border-collapse:
- collapse'>
- <tr style='height:20.1pt'>
-  <td width=167 style='width:125.0pt;padding:0in 5.4pt 0in 5.4pt;height:20.1pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[02]</span></b><span
-  style='font-size:13.0pt'> L&#7847;n &#273;&#7847;u:† </span>†{{F_02_lan_dau}}</p>
-  </td>
-  <td width=196 style='width:146.8pt;padding:0in 5.4pt 0in 5.4pt;height:20.1pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[03]</span></b><span
-  style='font-size:13.0pt'> B&#7893; sung l&#7847;n th&#7913;: </span>†{{F_03_bo_sung_lan_thu}}</p>
-  </td>
- </tr>
-</table>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 6pt;
+          margin-left: 0.05pt;
+          text-indent: -0.15pt;
+        "
+      >
+        <b
+          ><span style="font-size: 13pt"
+            >[06] T√™n &#273;&#7841;i l√Ω thu&#7871; (n&#7871;u c√≥):</span
+          ></b
+        >
+        {{F_06_ten_dai_ly_thue}}
+      </p>
 
-</div>
+      <p
+        class="MsoNormal"
+        style="margin: 6pt 0; display: flex; align-items: center"
+      >
+        <b><span style="font-size: 13pt">[05]</span></b>
+        <span style="font-size: 13pt; margin-right: 10px"
+          >&nbsp;M√£ s·ªë thu·∫ø:
+        </span>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:6.0pt;
-margin-left:.05pt;text-indent:-.15pt'><b><span style='font-size:13.0pt'>[04]
-TÍn ng&#432;&#7901;i n&#7897;p thu&#7871;:</span></b>
-{{F_04_ten_nguoi_nop_thue}}</p>
+        <span style="display: inline-flex; align-items: center">
+          {# 1. L√†m s·∫°ch m√£ s·ªë thu·∫ø #} {% set mst_raw = F_07_mst_dai_ly_thue |
+          replace('-', '') | replace(' ', '') %} {# 2. V·∫Ω 10 √¥ ƒë·∫ßu ti√™n #} {%
+          for i in range(10) %}
+          <span class="mst-box {{ 'no-border-right' if i < 9 else '' }}">
+            {{ mst_raw[i] if i < mst_raw|length else '' }}
+          </span>
+          {% endfor %} {# 3. Kho·∫£ng c√°ch #}
+          <span
+            style="
+              display: inline-block;
+              width: 22px;
+              text-align: center;
+              font-size: 13pt;
+            "
+          >
+          </span>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:6.0pt;
-margin-left:.05pt;text-indent:-.15pt'><b><span style='font-size:13.0pt'>†[05]</span></b><span
-style='font-size:13.0pt'> M„ s&#7889; thu&#7871;:†† </span>†{{F_05_ma_so_thue}}</p>
+          {# 4. V·∫Ω 3 √¥ cu·ªëi c√πng #} {% for i in range(10, 13) %}
+          <span class="mst-box {{ 'no-border-right' if i < 12 else '' }}">
+            {{ mst_raw[i] if i < mst_raw|length else '' }}
+          </span>
+          {% endfor %}
+        </span>
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:6.0pt;
-margin-left:.05pt;text-indent:-.15pt'><b><span style='font-size:13.0pt'>[06]
-TÍn &#273;&#7841;i l˝ thu&#7871; (n&#7871;u cÛ):</span></b>
-{{F_06_ten_dai_ly_thue}}</p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0in;
+          text-indent: -0.1pt;
+        "
+      >
+        <b>[08]</b> H&#7907;p &#273;&#7891;ng &#273;&#7841;i l√Ω thu&#7871;:
+        S&#7889; {{F_08_so_hop_dong_dai_ly}} ng√†y {{F_08_ngay_hop_dong_dai_ly}}
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:6.0pt;
-margin-left:.05pt;text-indent:-.15pt'><b><span style='font-size:13.0pt'>[07]</span></b><span
-style='font-size:13.0pt'> M„ s&#7889; thu&#7871;: </span>†{{F_07_mst_dai_ly_thue}}</p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0in;
+          text-indent: -0.1pt;
+        "
+      >
+        <b>[09]</b> T√™n &#273;&#417;n v&#7883; ph&#7909;
+        thu&#7897;c/&#273;&#7883;a &#273;i&#7875;m kinh doanh c&#7911;a
+        ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh kh√°c
+        t&#7881;nh n&#417;i &#273;√≥ng tr&#7909; s&#7903; ch√≠nh:
+        {{F_09_ten_don_vi_phu_thuoc}}
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:0in;text-indent:-.1pt'><b>[08]</b> H&#7907;p &#273;&#7891;ng
-&#273;&#7841;i l˝ thu&#7871;: S&#7889; {{F_08_so_hop_dong_dai_ly}} ng‡y
-{{F_08_ngay_hop_dong_dai_ly}}</p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0in;
+          text-indent: -0.1pt;
+        "
+      >
+        <b>[10]</b> M√£ s&#7889; thu&#7871; &#273;&#417;n v&#7883; ph&#7909;
+        thu&#7897;c/M√£ s&#7889; &#273;&#7883;a &#273;i&#7875;m kinh doanh:
+        {{F_10_mst_don_vi_phu_thuoc}}
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:0in;text-indent:-.1pt'><b>[09]</b> TÍn &#273;&#417;n v&#7883;
-ph&#7909; thu&#7897;c/&#273;&#7883;a &#273;i&#7875;m kinh doanh c&#7911;a
-ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh kh·c t&#7881;nh
-n&#417;i &#273;Ûng tr&#7909; s&#7903; chÌnh: {{F_09_ten_don_vi_phu_thuoc}}</p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0.05pt;
+          text-indent: -0.15pt;
+        "
+      >
+        <b><span style="font-size: 13pt">[11]</span></b
+        ><span style="font-size: 13pt">
+          &#272;&#7883;a ch&#7881; n&#417;i c√≥ ho&#7841;t &#273;&#7897;ng
+          s&#7843;n xu&#7845;t kinh doanh kh√°c t&#7881;nh n&#417;i &#273;√≥ng
+          tr&#7909; s&#7903; ch√≠nh:</span
+        >
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:0in;text-indent:-.1pt'><b>[10]</b> M„ s&#7889; thu&#7871;
-&#273;&#417;n v&#7883; ph&#7909; thu&#7897;c/M„ s&#7889; &#273;&#7883;a
-&#273;i&#7875;m kinh doanh: {{F_10_mst_don_vi_phu_thuoc}}</p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0in;
+          text-indent: -0.1pt;
+        "
+      >
+        ¬†¬†¬†¬†¬† [11a] Ph&#432;&#7901;ng/x√£ {{F_11a_phuong_xa}}¬†¬†¬†¬† [11b]
+        Qu&#7853;n/Huy&#7879;n {{F_11b_quan_huyen}}¬† [11c] T&#7881;nh/Th√†nh
+        ph&#7889; {{F_11c_tinh_thanh_pho}}
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:.05pt;text-indent:-.15pt'><b><span style='font-size:13.0pt'>[11]</span></b><span
-style='font-size:13.0pt'> &#272;&#7883;a ch&#7881; n&#417;i cÛ ho&#7841;t
-&#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh kh·c t&#7881;nh n&#417;i
-&#273;Ûng tr&#7909; s&#7903; chÌnh:</span></p>
+      <p
+        class="MsoNormal"
+        align="right"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0.05pt;
+          text-align: right;
+          text-indent: -0.15pt;
+        "
+      >
+        <span style="font-size: 13pt">&nbsp;</span>
+      </p>
 
-<p class=MsoNormal style='margin-top:3.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:0in;text-indent:-.1pt'>††††† [11a] Ph&#432;&#7901;ng/x„
-{{F_11a_phuong_xa}}†††† [11b] Qu&#7853;n/Huy&#7879;n {{F_11b_quan_huyen}}†
-[11c] T&#7881;nh/Th‡nh ph&#7889; {{F_11c_tinh_thanh_pho}}</p>
+      <p
+        class="MsoNormal"
+        align="right"
+        style="
+          margin-top: 3pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0.05pt;
+          text-align: right;
+          text-indent: -0.15pt;
+        "
+      >
+        <i
+          ><span style="font-size: 13pt"
+            >&#272;&#417;n v&#7883; ti&#7873;n: &#272;&#7891;ng Vi&#7879;t
+            Nam</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0in;
-margin-bottom:3.0pt;margin-left:.05pt;text-align:right;text-indent:-.15pt'><span
-style='font-size:13.0pt'>&nbsp;</span></p>
+      <table
+        class="a0"
+        border="1"
+        cellspacing="0"
+        cellpadding="0"
+        width="680"
+        style="margin-left: -5.4pt; border-collapse: collapse; border: none"
+      >
+        <tr style="height: 25.5pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 25.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">STT</span></b>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border: solid black 1pt;
+              border-left: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 25.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">Ch&#7881; ti√™u</span></b>
+            </p>
+          </td>
+          <td
+            width="78"
+            colspan="2"
+            style="
+              width: 58.45pt;
+              border: solid black 1pt;
+              border-left: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 25.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Gi√° tr&#7883; h√†ng h√≥a, d&#7883;ch v&#7909;<br />
+                  (ch&#432;a c√≥ thu&#7871; gi√° tr&#7883; gia t&#259;ng)</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="57"
+            colspan="2"
+            style="
+              width: 42.45pt;
+              border: solid black 1pt;
+              border-left: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 25.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng
+                </span></b
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 13.15pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">A</span></b>
+            </p>
+          </td>
+          <td
+            width="467"
+            style="
+              width: 350.1pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Kh√¥ng ph√°t sinh ho&#7841;t &#273;&#7897;ng mua, b√°n trong
+                  k&#7923;</span
+                ></b
+              ><span style="font-size: 13pt">
+                (&#273;√°nh d&#7845;u &quot;X&quot;)</span
+              >
+            </p>
+          </td>
+          <td
+            width="28"
+            style="
+              width: 21.2pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[21]</span></b> {{F_21}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="135"
+            colspan="4"
+            style="
+              width: 100.9pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">B</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng c√≤n
+                  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; k&#7923;
+                  tr&#432;&#7899;c chuy&#7875;n sang</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[22]</span></b> {{F_22}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">C</span></b>
+            </p>
+          </td>
+          <td
+            width="648"
+            colspan="7"
+            style="
+              width: 486.25pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >K√™ khai thu&#7871; gi√° tr&#7883; gia t&#259;ng ph&#7843;i
+                  n&#7897;p ng√¢n s√°ch nh√† n&#432;&#7899;c</span
+                ></b
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">I</span></b>
+            </p>
+          </td>
+          <td
+            width="648"
+            colspan="7"
+            style="
+              width: 486.25pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >H√†ng ho√°, d&#7883;ch v&#7909; mua v√†o trong k&#7923;</span
+                ></b
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">1</span></b>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >Gi√° tr&#7883; v√† thu&#7871; gi√° tr&#7883; gia t&#259;ng
+                c&#7911;a h√†ng h√≥a, d&#7883;ch v&#7909; mua v√†o</span
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[23]</span></b> {{F_23}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[24]</span></b> {{F_24}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >Trong &#273;√≥: h√†ng h√≥a, d&#7883;ch v&#7909; nh&#7853;p
+                kh&#7849;u</span
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[23a]</span></b> {{F_23a}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[24a]</span></b> {{F_24a}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">2</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >Thu&#7871; gi√° tr&#7883; gia t&#259;ng c&#7911;a h√†ng h√≥a,
+                d&#7883;ch v&#7909; mua v√†o &#273;&#432;&#7907;c kh&#7845;u
+                tr&#7915; k&#7923; n√†y</span
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[25]</span></b> {{F_25}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">II</span></b>
+            </p>
+          </td>
+          <td
+            width="648"
+            colspan="7"
+            style="
+              width: 486.25pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >H√†ng ho√°, d&#7883;ch v&#7909; b√°n ra trong k&#7923;</span
+                ></b
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">1</span></b>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >H√†ng h√≥a, d&#7883;ch v&#7909; b√°n ra kh√¥ng ch&#7883;u
+                  thu&#7871; gi√° tr&#7883; gia t&#259;ng
+                </span></b
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[26]</span></b> {{F_26}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="57"
+            colspan="2"
+            style="
+              width: 42.45pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">2</span></b>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >H√†ng h√≥a, d&#7883;ch v&#7909; b√°n ra ch&#7883;u thu&#7871;
+                  gi√° tr&#7883; gia t&#259;ng ([27]=[29]+[30]+[32]+[32a];
+                  [28]=[31]+[33])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[27]</span></b> {{F_27}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[28]</span></b> {{F_28}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">a</span>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >H√†ng ho√°, d&#7883;ch v&#7909; b√°n ra ch&#7883;u thu&#7871;
+                su&#7845;t 0%</span
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[29]</span></b> {{F_29}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="57"
+            colspan="2"
+            style="
+              width: 42.45pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">b</span>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >H√†ng ho√°, d&#7883;ch v&#7909; b√°n ra ch&#7883;u thu&#7871;
+                su&#7845;t 5%</span
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[30]</span></b> {{F_30}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[31]</span></b> {{F_31}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">c</span>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >H√†ng ho√°, d&#7883;ch v&#7909; b√°n ra ch&#7883;u thu&#7871;
+                su&#7845;t 10%</span
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[32]</span></b> {{F_32}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[33]</span></b> {{F_33}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">d</span>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >H√†ng ho√°, d&#7883;ch v&#7909; b√°n ra kh√¥ng t√≠nh
+                thu&#7871;</span
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[32a]</span></b> {{F_32a}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="57"
+            colspan="2"
+            style="
+              width: 42.45pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">3</span></b>
+            </p>
+          </td>
+          <td
+            width="514"
+            colspan="3"
+            style="
+              width: 385.35pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >T&#7893;ng doanh thu v√† thu&#7871; gi√° tr&#7883; gia
+                  t&#259;ng c&#7911;a h√†ng h√≥a, d&#7883;ch v&#7909; b√°n ra
+                  ([34]=[26]+[27]; [35]=[28])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="37"
+            style="
+              width: 27.7pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[34]</span></b> {{F_34}}
+            </p>
+          </td>
+          <td
+            width="41"
+            style="
+              width: 30.75pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[35]</span></b> {{F_35}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">III</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng ph√°t sinh trong
+                  k&#7923; ([36]=[35]-[25])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[36]</span></b> {{F_36}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">IV</span></b>
+            </p>
+          </td>
+          <td
+            width="648"
+            colspan="7"
+            style="
+              width: 486.25pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >&#272;i&#7873;u ch&#7881;nh t&#259;ng, gi&#7843;m thu&#7871;
+                  gi√° tr&#7883; gia t&#259;ng c√≤n &#273;&#432;&#7907;c
+                  kh&#7845;u tr&#7915; c&#7911;a c√°c k&#7923;
+                  tr&#432;&#7899;c</span
+                ></b
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">1</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >&#272;i&#7873;u ch&#7881;nh gi&#7843;m
+              </span>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[37]</span></b> {{F_37}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">2</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >&#272;i&#7873;u ch&#7881;nh t&#259;ng
+              </span>
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[38]</span></b> {{F_38}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 13.15pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">V</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng nh&#7853;n b√†n giao
+                  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; trong k&#7923;</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[39a]</span></b> {{F_39a}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.15pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">VI</span></b>
+            </p>
+          </td>
+          <td
+            width="648"
+            colspan="7"
+            style="
+              width: 486.25pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >X√°c &#273;&#7883;nh ngh&#297;a v&#7909; thu&#7871; gi√°
+                  tr&#7883; gia t&#259;ng ph&#7843;i n&#7897;p trong
+                  k&#7923;:</span
+                ></b
+              >
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">1</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng ph&#7843;i n&#7897;p
+                  c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
+                  doanh trong k&#7923;</span
+                ></b
+              >
+            </p>
+            <p class="MsoNormal" style="margin-left: 0in; text-indent: -0.1pt">
+              <b
+                ><span style="font-size: 13pt; font-family: 'Gungsuh', serif"
+                  >{[40a]=([36]-[22]+[37]-[38]-[39a]) &#8805; 0}</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[40a]</span></b> {{F_40a}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 24pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 24pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">2</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 24pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="
+                margin-left: 0.05pt;
+                text-align: justify;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng mua v√†o c&#7911;a
+                  d&#7921; √°n &#273;&#7847;u t&#432; &#273;&#432;&#7907;c b√π
+                  tr&#7915; v&#7899;i thu&#7871; GTGT c√≤n ph&#7843;i n&#7897;p
+                  c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
+                  doanh c√πng k&#7923; t√≠nh thu&#7871; ([40b]&#8804;[40a])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 24pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[40b]</span></b> {{F_40b}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 24pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">3</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng c√≤n ph&#7843;i
+                  n&#7897;p trong k&#7923; ([40]=[40a]-[40b])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[40]</span></b> {{F_40}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">4</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng ch&#432;a kh&#7845;u
+                  tr&#7915; h&#7871;t k&#7923; n√†y
+                  {[41]=([36]-[22]+[37]-[38]-[39a]) &#8804; 0}</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[41]</span></b> {{F_41}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 12.75pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">4.1</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng &#273;&#7873;
+                  ngh&#7883; ho√†n ([42] &#8804; [41])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[42]</span></b> {{F_42}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 12.75pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr style="height: 13.5pt">
+          <td
+            width="32"
+            style="
+              width: 24.1pt;
+              border: solid black 1pt;
+              border-top: none;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">4.2</span></b>
+            </p>
+          </td>
+          <td
+            width="592"
+            colspan="5"
+            style="
+              width: 443.8pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >Thu&#7871; gi√° tr&#7883; gia t&#259;ng c√≤n
+                  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; chuy&#7875;n
+                  k&#7923; sau ([43]=[41]-[42])</span
+                ></b
+              >
+            </p>
+          </td>
+          <td
+            width="38"
+            style="
+              width: 28.4pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-top: 0in;
+                margin-right: -5.65pt;
+                margin-bottom: 0in;
+                margin-left: 0.05pt;
+                margin-bottom: 0.0001pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">[43]</span></b> {{F_43}}
+            </p>
+          </td>
+          <td
+            width="19"
+            style="
+              width: 14.05pt;
+              border-top: none;
+              border-left: none;
+              border-bottom: solid black 1pt;
+              border-right: solid black 1pt;
+              padding: 0in 5.4pt 0in 5.4pt;
+              height: 13.5pt;
+            "
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b><span style="font-size: 13pt">&nbsp;</span></b>
+            </p>
+          </td>
+        </tr>
+        <tr height="0">
+          <td width="39" style="border: none"></td>
+          <td width="344" style="border: none"></td>
+          <td width="71" style="border: none"></td>
+          <td width="19" style="border: none"></td>
+          <td width="78" style="border: none"></td>
+          <td width="33" style="border: none"></td>
+          <td width="79" style="border: none"></td>
+          <td width="19" style="border: none"></td>
+        </tr>
+      </table>
 
-<p class=MsoNormal align=right style='margin-top:3.0pt;margin-right:0in;
-margin-bottom:3.0pt;margin-left:.05pt;text-align:right;text-indent:-.15pt'><i><span
-style='font-size:13.0pt'>&#272;&#417;n v&#7883; ti&#7873;n: &#272;&#7891;ng
-Vi&#7879;t Nam</span></i></p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 6pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0.05pt;
+          text-align: justify;
+          text-indent: -0.15pt;
+        "
+      >
+        <span style="font-size: 13pt">&nbsp;</span>
+      </p>
 
-<table class=a0 border=1 cellspacing=0 cellpadding=0 width=680
- style='margin-left:-5.4pt;border-collapse:collapse;border:none'>
- <tr style='height:25.5pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:25.5pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>STT</span></b></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border:solid black 1.0pt;
-  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:25.5pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>Ch&#7881; tiÍu</span></b></p>
-  </td>
-  <td width=78 colspan=2 style='width:58.45pt;border:solid black 1.0pt;
-  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:25.5pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>Gi· tr&#7883; h‡ng hÛa,
-  d&#7883;ch v&#7909;<br>
-  (ch&#432;a cÛ thu&#7871; gi· tr&#7883; gia t&#259;ng)</span></b></p>
-  </td>
-  <td width=57 colspan=2 style='width:42.45pt;border:solid black 1.0pt;
-  border-left:none;padding:0in 5.4pt 0in 5.4pt;height:25.5pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>Thu&#7871; gi·
-  tr&#7883; gia t&#259;ng </span></b></p>
-  </td>
- </tr>
- <tr style='height:13.15pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>A</span></b></p>
-  </td>
-  <td width=467 style='width:350.1pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.15pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>KhÙng ph·t sinh ho&#7841;t
-  &#273;&#7897;ng mua, b·n trong k&#7923;</span></b><span style='font-size:
-  13.0pt'> (&#273;·nh d&#7845;u &quot;X&quot;)</span></p>
-  </td>
-  <td width=28 style='width:21.2pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[21]</span></b>
-  {{F_21}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=135 colspan=4 style='width:100.9pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.0pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.0pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>B</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.0pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng cÚn
-  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; k&#7923; tr&#432;&#7899;c
-  chuy&#7875;n sang</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.0pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[22]</span></b>
-  {{F_22}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.0pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:12.0pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.0pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>C</span></b></p>
-  </td>
-  <td width=648 colspan=7 style='width:486.25pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.0pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>KÍ khai thu&#7871; gi· tr&#7883;
-  gia t&#259;ng ph&#7843;i n&#7897;p ng‚n s·ch nh‡ n&#432;&#7899;c</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.0pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.0pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>I</span></b></p>
-  </td>
-  <td width=648 colspan=7 style='width:486.25pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.0pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>H‡ng ho·, d&#7883;ch v&#7909; mua
-  v‡o trong k&#7923;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>1</span></b></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>Gi· tr&#7883; v‡ thu&#7871; gi· tr&#7883; gia
-  t&#259;ng c&#7911;a h‡ng hÛa, d&#7883;ch v&#7909; mua v‡o</span></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[23]</span></b>
-  {{F_23}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[24]</span></b>
-  {{F_24}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>Trong &#273;Û: h‡ng hÛa, d&#7883;ch v&#7909;
-  nh&#7853;p kh&#7849;u</span></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[23a]</span></b>
-  {{F_23a}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[24a]</span></b>
-  {{F_24a}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>2</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng c&#7911;a
-  h‡ng hÛa, d&#7883;ch v&#7909; mua v‡o &#273;&#432;&#7907;c kh&#7845;u
-  tr&#7915; k&#7923; n‡y</span></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[25]</span></b>
-  {{F_25}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>II</span></b></p>
-  </td>
-  <td width=648 colspan=7 style='width:486.25pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>H‡ng ho·, d&#7883;ch v&#7909; b·n
-  ra trong k&#7923;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>1</span></b></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>H‡ng hÛa, d&#7883;ch v&#7909; b·n ra khÙng
-  ch&#7883;u thu&#7871; gi· tr&#7883; gia t&#259;ng </span></b></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[26]</span></b>
-  {{F_26}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=57 colspan=2 style='width:42.45pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>2</span></b></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>H‡ng hÛa, d&#7883;ch v&#7909; b·n ra ch&#7883;u
-  thu&#7871; gi· tr&#7883; gia t&#259;ng ([27]=[29]+[30]+[32]+[32a];
-  [28]=[31]+[33])</span></b></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[27]</span></b>
-  {{F_27}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[28]</span></b>
-  {{F_28}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>a</span></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>H‡ng ho·, d&#7883;ch v&#7909; b·n ra ch&#7883;u
-  thu&#7871; su&#7845;t 0%</span></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[29]</span></b>
-  {{F_29}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=57 colspan=2 style='width:42.45pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>b</span></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>H‡ng ho·, d&#7883;ch v&#7909; b·n ra ch&#7883;u
-  thu&#7871; su&#7845;t 5%</span></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[30]</span></b>
-  {{F_30}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[31]</span></b>
-  {{F_31}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>c</span></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>H‡ng ho·, d&#7883;ch v&#7909; b·n ra ch&#7883;u
-  thu&#7871; su&#7845;t 10%</span></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[32]</span></b>
-  {{F_32}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[33]</span></b>
-  {{F_33}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>d</span></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>H‡ng ho·, d&#7883;ch v&#7909; b·n ra khÙng tÌnh
-  thu&#7871;</span></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[32a]</span></b>
-  {{F_32a}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=57 colspan=2 style='width:42.45pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>3</span></b></p>
-  </td>
-  <td width=514 colspan=3 style='width:385.35pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>T&#7893;ng doanh thu v‡ thu&#7871; gi· tr&#7883; gia
-  t&#259;ng c&#7911;a h‡ng hÛa, d&#7883;ch v&#7909; b·n ra ([34]=[26]+[27];
-  [35]=[28])</span></b></p>
-  </td>
-  <td width=37 style='width:27.7pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[34]</span></b>
-  {{F_34}}</p>
-  </td>
-  <td width=41 style='width:30.75pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[35]</span></b>
-  {{F_35}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>III</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng ph·t sinh
-  trong k&#7923; ([36]=[35]-[25])</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[36]</span></b>
-  {{F_36}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>IV</span></b></p>
-  </td>
-  <td width=648 colspan=7 style='width:486.25pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>&#272;i&#7873;u ch&#7881;nh
-  t&#259;ng, gi&#7843;m thu&#7871; gi· tr&#7883; gia t&#259;ng cÚn
-  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; c&#7911;a c·c k&#7923;
-  tr&#432;&#7899;c</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>1</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>&#272;i&#7873;u ch&#7881;nh gi&#7843;m </span></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[37]</span></b> {{F_37}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>2</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>&#272;i&#7873;u ch&#7881;nh t&#259;ng </span></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[38]</span></b>
-  {{F_38}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:13.15pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>V</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:13.15pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng nh&#7853;n
-  b‡n giao &#273;&#432;&#7907;c kh&#7845;u tr&#7915; trong k&#7923;</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[39a]</span></b>
-  {{F_39a}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.15pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>&nbsp;</span></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>VI</span></b></p>
-  </td>
-  <td width=648 colspan=7 style='width:486.25pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>X·c &#273;&#7883;nh ngh&#297;a
-  v&#7909; thu&#7871; gi· tr&#7883; gia t&#259;ng ph&#7843;i n&#7897;p trong
-  k&#7923;:</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>1</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia
-  t&#259;ng ph&#7843;i n&#7897;p c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n
-  xu&#7845;t kinh doanh trong k&#7923;</span></b></p>
-  <p class=MsoNormal style='margin-left:0in;text-indent:-.1pt'><b><span
-  style='font-size:13.0pt;font-family:"Gungsuh",serif'>{[40a]=([36]-[22]+[37]-[38]-[39a])
-  &#8805; 0}</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[40a]</span></b>
-  {{F_40a}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:24.0pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:24.0pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>2</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:24.0pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-align:justify;text-indent:
-  -.15pt'><b><span style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia
-  t&#259;ng mua v‡o c&#7911;a d&#7921; ·n &#273;&#7847;u t&#432;
-  &#273;&#432;&#7907;c b˘ tr&#7915; v&#7899;i thu&#7871; GTGT cÚn ph&#7843;i
-  n&#7897;p c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
-  doanh c˘ng k&#7923; tÌnh thu&#7871; ([40b]&#8804;[40a])</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:24.0pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[40b]</span></b>
-  {{F_40b}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:24.0pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>3</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng cÚn
-  ph&#7843;i n&#7897;p trong k&#7923; ([40]=[40a]-[40b])</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[40]</span></b>
-  {{F_40}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>4</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng ch&#432;a
-  kh&#7845;u tr&#7915; h&#7871;t k&#7923; n‡y {[41]=([36]-[22]+[37]-[38]-[39a])
-  &#8804; 0}</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[41]</span></b>
-  {{F_41}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:12.75pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>4.1</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng &#273;&#7873;
-  ngh&#7883; ho‡n ([42] &#8804; [41])</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[42]</span></b>
-  {{F_42}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:12.75pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr style='height:13.5pt'>
-  <td width=32 style='width:24.1pt;border:solid black 1.0pt;border-top:none;
-  padding:0in 5.4pt 0in 5.4pt;height:13.5pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>4.2</span></b></p>
-  </td>
-  <td width=592 colspan=5 style='width:443.8pt;border-top:none;border-left:
-  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
-  padding:0in 5.4pt 0in 5.4pt;height:13.5pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>Thu&#7871; gi· tr&#7883; gia t&#259;ng cÚn
-  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; chuy&#7875;n k&#7923; sau
-  ([43]=[41]-[42])</span></b></p>
-  </td>
-  <td width=38 style='width:28.4pt;border-top:none;border-left:none;border-bottom:
-  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.5pt'>
-  <p class=MsoNormal align=center style='margin-top:0in;margin-right:-5.65pt;
-  margin-bottom:0in;margin-left:.05pt;margin-bottom:.0001pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>[43]</span></b>
-  {{F_43}}</p>
-  </td>
-  <td width=19 style='width:14.05pt;border-top:none;border-left:none;
-  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt;
-  height:13.5pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&nbsp;</span></b></p>
-  </td>
- </tr>
- <tr height=0>
-  <td width=39 style='border:none'></td>
-  <td width=344 style='border:none'></td>
-  <td width=71 style='border:none'></td>
-  <td width=19 style='border:none'></td>
-  <td width=78 style='border:none'></td>
-  <td width=33 style='border:none'></td>
-  <td width=79 style='border:none'></td>
-  <td width=19 style='border:none'></td>
- </tr>
-</table>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 6pt;
+          margin-right: 0in;
+          margin-bottom: 3pt;
+          margin-left: 0.05pt;
+          text-align: justify;
+          text-indent: -0.15pt;
+        "
+      >
+        <span style="font-size: 13pt"
+          >T√¥i cam &#273;oan s&#7889; li&#7879;u khai tr√™n l√† &#273;√∫ng v√†
+          ch&#7883;u tr√°ch nhi&#7879;m tr&#432;&#7899;c ph√°p lu&#7853;t v&#7873;
+          s&#7889; li&#7879;u &#273;√£ khai./.<span style="color: black"
+            >&nbsp;</span
+          ></span
+        >
+      </p>
 
-<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:.05pt;text-align:justify;text-indent:-.15pt'><span
-style='font-size:13.0pt'>&nbsp;</span></p>
+      <table
+        class="a1"
+        border="0"
+        cellspacing="0"
+        cellpadding="0"
+        width="657"
+        style="margin-left: -5.4pt; border-collapse: collapse"
+      >
+        <tr>
+          <td
+            width="275"
+            valign="top"
+            style="width: 205.95pt; padding: 0in 5.4pt 0in 5.4pt"
+          >
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt">&nbsp;</span>
+            </p>
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >NH√ÇN VI√äN &#272;&#7840;I L√ù THU&#7870;</span
+                ></b
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt">H&#7885; v√† t√™n:.......</span>
+            </p>
+            <p
+              class="MsoNormal"
+              style="margin-left: 0.05pt; text-indent: -0.15pt"
+            >
+              <span style="font-size: 13pt"
+                >Ch&#7913;ng ch&#7881; h√†nh ngh&#7873; s&#7889;:.......</span
+              >
+            </p>
+          </td>
+          <td
+            width="382"
+            valign="top"
+            style="width: 286.8pt; padding: 0in 5.4pt 0in 5.4pt"
+          >
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <i
+                ><span style="font-size: 13pt"
+                  >..., ng√†y....... th√°ng....... n&#259;m.......</span
+                ></i
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >NG&#431;&#7900;I N&#7896;P THU&#7870; ho&#7863;c
+                </span></b
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <b
+                ><span style="font-size: 13pt"
+                  >&#272;&#7840;I DI&#7878;N H&#7906;P PH√ÅP C&#7910;A
+                  NG&#431;&#7900;I N&#7896;P THU&#7870;</span
+                ></b
+              >
+            </p>
+            <p
+              class="MsoNormal"
+              align="center"
+              style="
+                margin-left: 0.05pt;
+                text-align: center;
+                text-indent: -0.15pt;
+              "
+            >
+              <span style="font-size: 13pt"
+                >(<i
+                  >Ch&#7919; k√Ω, ghi r√µ h&#7885; t√™n; ch&#7913;c v&#7909; v√†
+                  &#273;√≥ng d&#7845;u (n&#7871;u c√≥)/K√Ω &#273;i&#7879;n
+                  t&#7917;</i
+                >)</span
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
 
-<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:3.0pt;
-margin-left:.05pt;text-align:justify;text-indent:-.15pt'><span
-style='font-size:13.0pt'>TÙi cam &#273;oan s&#7889; li&#7879;u khai trÍn l‡
-&#273;˙ng v‡ ch&#7883;u tr·ch nhi&#7879;m tr&#432;&#7899;c ph·p lu&#7853;t
-v&#7873; s&#7889; li&#7879;u &#273;„ khai./.<span style='color:black'>&nbsp;</span></span></p>
+      <p class="MsoNormal" style="margin-left: 0in; text-indent: -0.1pt">
+        <a name="_heading=h.30j0zll"></a>______________________
+      </p>
 
-<table class=a1 border=0 cellspacing=0 cellpadding=0 width=657
- style='margin-left:-5.4pt;border-collapse:collapse'>
- <tr>
-  <td width=275 valign=top style='width:205.95pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>&nbsp;</span></p>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><b><span
-  style='font-size:13.0pt'>NH¬N VI N &#272;&#7840;I L› THU&#7870;</span></b></p>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>H&#7885; v‡ tÍn:.......</span></p>
-  <p class=MsoNormal style='margin-left:.05pt;text-indent:-.15pt'><span
-  style='font-size:13.0pt'>Ch&#7913;ng ch&#7881; h‡nh ngh&#7873;
-  s&#7889;:.......</span></p>
-  </td>
-  <td width=382 valign=top style='width:286.8pt;padding:0in 5.4pt 0in 5.4pt'>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><i><span style='font-size:13.0pt'>..., ng‡y.......
-  th·ng....... n&#259;m.......</span></i></p>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>NG&#431;&#7900;I
-  N&#7896;P THU&#7870; ho&#7863;c </span></b></p>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><b><span style='font-size:13.0pt'>&#272;&#7840;I
-  DI&#7878;N H&#7906;P PH¡P C&#7910;A NG&#431;&#7900;I N&#7896;P THU&#7870;</span></b></p>
-  <p class=MsoNormal align=center style='margin-left:.05pt;text-align:center;
-  text-indent:-.15pt'><span style='font-size:13.0pt'>(<i>Ch&#7919; k˝, ghi rı
-  h&#7885; tÍn; ch&#7913;c v&#7909; v‡ &#273;Ûng d&#7845;u (n&#7871;u cÛ)/K˝
-  &#273;i&#7879;n t&#7917;</i>)</span></p>
-  </td>
- </tr>
-</table>
+      <p class="MsoNormal" style="margin-left: 0in; text-indent: -0.1pt">
+        <b
+          ><i
+            ><u><span style="font-size: 10pt">Ghi ch√∫:</span></u></i
+          ></b
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-indent:-.1pt'><a
-name="_heading=h.30j0zll"></a>______________________</p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >1. Ch&#7881; ti√™u [01a]: Ng&#432;&#7901;i n&#7897;p thu&#7871;
+            l&#7921;a ch&#7885;n m&#7897;t trong c√°c ho&#7841;t &#273;&#7897;ng
+            sau:</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-indent:-.1pt'><b><i><u><span
-style='font-size:10.0pt'>Ghi ch˙:</span></u></i></b></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >- Ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh th√¥ng
+            th&#432;&#7901;ng</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>1. Ch&#7881; tiÍu [01a]: Ng&#432;&#7901;i n&#7897;p thu&#7871;
-l&#7921;a ch&#7885;n m&#7897;t trong c·c ho&#7841;t &#273;&#7897;ng sau:</span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >- Ho&#7841;t &#273;&#7897;ng x&#7893; s&#7889; ki&#7871;n
+            thi&#7871;t, x&#7893; s&#7889; &#273;i&#7879;n to√°n</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>- Ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
-doanh thÙng th&#432;&#7901;ng</span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >- Ho&#7841;t &#273;&#7897;ng th&#259;m d√≤ khai th√°c d&#7847;u
+            kh√≠</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>- Ho&#7841;t &#273;&#7897;ng x&#7893; s&#7889;
-ki&#7871;n thi&#7871;t, x&#7893; s&#7889; &#273;i&#7879;n to·n</span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >- D&#7921; √°n &#273;&#7847;u t&#432; c&#417; s&#7903; h&#7841;
+            t&#7847;ng, nh√† &#273;&#7875; chuy&#7875;n nh&#432;&#7907;ng kh√°c
+            &#273;&#7883;a b√†n t&#7881;nh n&#417;i &#273;√≥ng tr&#7909; s&#7903;
+            ch√≠nh</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>- Ho&#7841;t &#273;&#7897;ng th&#259;m dÚ khai th·c
-d&#7847;u khÌ</span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >- Nh√† m√°y s&#7843;n xu&#7845;t &#273;i&#7879;n kh√°c &#273;&#7883;a
+            b√†n t&#7881;nh n&#417;i &#273;√≥ng tr&#7909; s&#7903; ch√≠nh.</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>- D&#7921; ·n &#273;&#7847;u t&#432; c&#417; s&#7903;
-h&#7841; t&#7847;ng, nh‡ &#273;&#7875; chuy&#7875;n nh&#432;&#7907;ng kh·c
-&#273;&#7883;a b‡n t&#7881;nh n&#417;i &#273;Ûng tr&#7909; s&#7903; chÌnh</span></i></p>
+      <p
+        class="MsoNormal"
+        style="
+          margin-top: 6pt;
+          margin-right: 0in;
+          margin-bottom: 0in;
+          margin-left: 0in;
+          margin-bottom: 0.0001pt;
+          text-align: justify;
+          text-indent: -0.1pt;
+        "
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >¬†¬†¬†¬†¬†¬†¬†¬†¬†¬†¬† ¬†¬†¬†¬†¬†¬† 2. Ch&#7881; ti√™u [09], [10], [11]: Khai th√¥ng
+            tin c&#7911;a &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
+            &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;√≥ng t&#7841;i
+            &#273;&#7883;a ph&#432;&#417;ng kh√°c t&#7881;nh n&#417;i &#273;√≥ng
+            tr&#7909; s&#7903; ch√≠nh &#273;&#7889;i v&#7899;i c√°c
+            tr&#432;&#7901;ng h&#7907;p quy &#273;&#7883;nh t&#7841;i
+            &#273;i&#7875;m b, c kho&#7843;n 1 &#272;i&#7873;u 11 Ngh&#7883;
+            &#273;&#7883;nh s&#7889; 126/2020/N&#272;-CP ng√†y 19/10/2020
+            c&#7911;a Ch√≠nh ph&#7911;. Tr&#432;&#7901;ng h&#7907;p c√≥
+            nhi&#7873;u &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
+            &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;√≥ng tr√™n nhi&#7873;u
+            huy&#7879;n do C&#7909;c Thu&#7871; qu&#7843;n l√Ω th√¨ ch&#7885;n 1
+            &#273;&#417;n v&#7883; &#273;&#7841;i di&#7879;n &#273;&#7875; k√™
+            khai v√†o ch&#7881; ti√™u n√†y. Tr&#432;&#7901;ng h&#7907;p c√≥
+            nhi&#7873;u &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
+            &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;√≥ng tr√™n nhi&#7873;u
+            huy&#7879;n do Chi c&#7909;c Thu&#7871; khu v&#7921;c qu&#7843;n l√Ω
+            th√¨ ch&#7885;n 1 &#273;&#417;n v&#7883; &#273;&#7841;i di&#7879;n
+            cho huy&#7879;n do Chi c&#7909;c Thu&#7871; khu v&#7921;c qu&#7843;n
+            l√Ω &#273;&#7875; k√™ khai v√†o ch&#7881; ti√™u n√†y.¬†
+          </span></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>- Nh‡ m·y s&#7843;n xu&#7845;t &#273;i&#7879;n kh·c
-&#273;&#7883;a b‡n t&#7881;nh n&#417;i &#273;Ûng tr&#7909; s&#7903; chÌnh.</span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >3. Ch&#7881; ti√™u [32a]: Khai gi√° tr&#7883; h√†ng h√≥a, d&#7883;ch
+            v&#7909; thu&#7897;c tr&#432;&#7901;ng h&#7907;p kh√¥ng ph&#7843;i k√™
+            khai, t√≠nh n&#7897;p thu&#7871; gi√° tr&#7883; gia t&#259;ng theo quy
+            &#273;&#7883;nh c&#7911;a ph√°p lu&#7853;t thu&#7871; gi√° tr&#7883;
+            gia t&#259;ng.</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
-margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>††††††††††† †††††† 2. Ch&#7881; tiÍu [09], [10], [11]:
-Khai thÙng tin c&#7911;a &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
-&#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;Ûng t&#7841;i &#273;&#7883;a
-ph&#432;&#417;ng kh·c t&#7881;nh n&#417;i &#273;Ûng tr&#7909; s&#7903; chÌnh
-&#273;&#7889;i v&#7899;i c·c tr&#432;&#7901;ng h&#7907;p quy &#273;&#7883;nh
-t&#7841;i &#273;i&#7875;m b, c kho&#7843;n 1 &#272;i&#7873;u 11 Ngh&#7883;
-&#273;&#7883;nh s&#7889; 126/2020/N&#272;-CP ng‡y 19/10/2020 c&#7911;a ChÌnh
-ph&#7911;. Tr&#432;&#7901;ng h&#7907;p cÛ nhi&#7873;u &#273;&#417;n v&#7883;
-ph&#7909; thu&#7897;c, &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;Ûng trÍn
-nhi&#7873;u huy&#7879;n do C&#7909;c Thu&#7871; qu&#7843;n l˝ thÏ ch&#7885;n 1
-&#273;&#417;n v&#7883; &#273;&#7841;i di&#7879;n &#273;&#7875; kÍ khai v‡o
-ch&#7881; tiÍu n‡y. Tr&#432;&#7901;ng h&#7907;p cÛ nhi&#7873;u &#273;&#417;n
-v&#7883; ph&#7909; thu&#7897;c, &#273;&#7883;a &#273;i&#7875;m kinh doanh
-&#273;Ûng trÍn nhi&#7873;u huy&#7879;n do Chi c&#7909;c Thu&#7871; khu
-v&#7921;c qu&#7843;n l˝ thÏ ch&#7885;n 1 &#273;&#417;n v&#7883; &#273;&#7841;i
-di&#7879;n cho huy&#7879;n do Chi c&#7909;c Thu&#7871; khu v&#7921;c qu&#7843;n
-l˝ &#273;&#7875; kÍ khai v‡o ch&#7881; tiÍu n‡y.† </span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >4. Ch&#7881; ti√™u [37] v√† [38]: Khai theo s&#7889; thu&#7871;
+            &#273;&#432;&#7907;c kh&#7845;u tr&#7915; &#273;i&#7873;u
+            ch&#7881;nh t&#259;ng/gi&#7843;m t&#7841;i ch&#7881; ti√™u II tr√™n
+            T&#7901; khai b&#7893; sung. Ri√™ng tr&#432;&#7901;ng h&#7907;p
+            c&#417; quan thu&#7871;, c&#417; quan c√≥ th&#7849;m quy&#7873;n
+            &#273;√£ ban h√†nh k&#7871;t lu&#7853;n, quy&#7871;t &#273;&#7883;nh
+            x&#7917; l√Ω v&#7873; thu&#7871; c√≥ &#273;i&#7873;u ch&#7881;nh
+            t&#432;&#417;ng &#7913;ng c√°c k&#7923; t√≠nh thu&#7871;
+            tr&#432;&#7899;c th√¨ khai v√†o h&#7891; s&#417; khai thu&#7871;
+            c&#7911;a k&#7923; t√≠nh thu&#7871; nh&#7853;n &#273;&#432;&#7907;c
+            k&#7871;t lu&#7853;n, quy&#7871;t &#273;&#7883;nh x&#7917; l√Ω
+            v&#7873; thu&#7871; (kh√¥ng ph&#7843;i khai b&#7893; sung h&#7891;
+            s&#417; khai thu&#7871;).</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>3. Ch&#7881; tiÍu [32a]: Khai gi· tr&#7883; h‡ng hÛa,
-d&#7883;ch v&#7909; thu&#7897;c tr&#432;&#7901;ng h&#7907;p khÙng ph&#7843;i kÍ
-khai, tÌnh n&#7897;p thu&#7871; gi· tr&#7883; gia t&#259;ng theo quy
-&#273;&#7883;nh c&#7911;a ph·p lu&#7853;t thu&#7871; gi· tr&#7883; gia
-t&#259;ng.</span></i></p>
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <i
+          ><span style="font-size: 11pt"
+            >5. Ch&#7881; ti√™u [39a]: Khai s&#7889; thu&#7871; GTGT c√≤n
+            &#273;&#432;&#7907;c kh&#7845;u tr&#7915; ch&#432;a &#273;&#7873;
+            ngh&#7883; ho√†n c&#7911;a d&#7921; √°n &#273;&#7847;u t&#432;
+            chuy&#7875;n cho ng&#432;&#7901;i n&#7897;p thu&#7871; ti&#7871;p
+            t&#7909;c kh&#7845;u tr&#7915; (l√† s&#7889; thu&#7871; GTGT c√≤n
+            &#273;&#432;&#7907;c kh&#7845;u tr&#7915;, kh√¥ng &#273;&#7911;
+            &#273;i&#7873;u ki&#7879;n ho√†n, kh√¥ng ho√†n m√† ng&#432;&#7901;i
+            n&#7897;p thu&#7871; &#273;√£ k√™ khai ri√™ng t&#7901; khai thu&#7871;
+            d&#7921; √°n &#273;&#7847;u t&#432;) khi d&#7921; √°n &#273;&#7847;u
+            t&#432; &#273;i v√†o ho&#7841;t &#273;&#7897;ng ho&#7863;c s&#7889;
+            thu&#7871; GTGT c√≤n &#273;&#432;&#7907;c kh&#7845;u tr&#7915;
+            ch&#432;a &#273;&#7873; ngh&#7883; ho√†n c&#7911;a ho&#7841;t
+            &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh c&#7911;a
+            &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c khi ch&#7845;m
+            d&#7913;t ho&#7841;t &#273;&#7897;ng,‚Ä¶</span
+          ></i
+        >
+      </p>
 
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>4. Ch&#7881; tiÍu [37] v‡ [38]: Khai theo s&#7889;
-thu&#7871; &#273;&#432;&#7907;c kh&#7845;u tr&#7915; &#273;i&#7873;u
-ch&#7881;nh t&#259;ng/gi&#7843;m t&#7841;i ch&#7881; tiÍu II trÍn T&#7901; khai
-b&#7893; sung. RiÍng tr&#432;&#7901;ng h&#7907;p c&#417; quan thu&#7871;,
-c&#417; quan cÛ th&#7849;m quy&#7873;n &#273;„ ban h‡nh k&#7871;t lu&#7853;n,
-quy&#7871;t &#273;&#7883;nh x&#7917; l˝ v&#7873; thu&#7871; cÛ &#273;i&#7873;u
-ch&#7881;nh t&#432;&#417;ng &#7913;ng c·c k&#7923; tÌnh thu&#7871; tr&#432;&#7899;c
-thÏ khai v‡o h&#7891; s&#417; khai thu&#7871; c&#7911;a k&#7923; tÌnh
-thu&#7871; nh&#7853;n &#273;&#432;&#7907;c k&#7871;t lu&#7853;n, quy&#7871;t
-&#273;&#7883;nh x&#7917; l˝ v&#7873; thu&#7871; (khÙng ph&#7843;i khai b&#7893;
-sung h&#7891; s&#417; khai thu&#7871;).</span></i></p>
-
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><i><span
-style='font-size:11.0pt'>5. Ch&#7881; tiÍu [39a]: Khai s&#7889; thu&#7871; GTGT
-cÚn &#273;&#432;&#7907;c kh&#7845;u tr&#7915; ch&#432;a &#273;&#7873;
-ngh&#7883; ho‡n c&#7911;a d&#7921; ·n &#273;&#7847;u t&#432; chuy&#7875;n cho
-ng&#432;&#7901;i n&#7897;p thu&#7871; ti&#7871;p t&#7909;c kh&#7845;u tr&#7915;
-(l‡ s&#7889; thu&#7871; GTGT cÚn &#273;&#432;&#7907;c kh&#7845;u tr&#7915;,
-khÙng &#273;&#7911; &#273;i&#7873;u ki&#7879;n ho‡n, khÙng ho‡n m‡
-ng&#432;&#7901;i n&#7897;p thu&#7871; &#273;„ kÍ khai riÍng t&#7901; khai thu&#7871;
-d&#7921; ·n &#273;&#7847;u t&#432;) khi d&#7921; ·n &#273;&#7847;u t&#432;
-&#273;i v‡o ho&#7841;t &#273;&#7897;ng ho&#7863;c s&#7889; thu&#7871; GTGT cÚn
-&#273;&#432;&#7907;c kh&#7845;u tr&#7915; ch&#432;a &#273;&#7873; ngh&#7883;
-ho‡n c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh
-c&#7911;a &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c khi ch&#7845;m d&#7913;t
-ho&#7841;t &#273;&#7897;ng,Ö</span></i></p>
-
-<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:-.1pt'><a
-name="_heading=h.1fob9te"></a><i><span style='font-size:11.0pt'>6. Ch&#7881;
-tiÍu [40b]: Khai t&#7893;ng s&#7889; thu&#7871; &#273;„ khai t&#7841;i
-ch&#7881; tiÍu [28a] v‡ [28b] c&#7911;a c·c T&#7901; khai m&#7851;u s&#7889;
-02/GTGT./.</span></i></p>
-
-</div>
-
-</body>
-
+      <p
+        class="MsoNormal"
+        style="margin-left: 0in; text-align: justify; text-indent: -0.1pt"
+      >
+        <a name="_heading=h.1fob9te"></a
+        ><i
+          ><span style="font-size: 11pt"
+            >6. Ch&#7881; ti√™u [40b]: Khai t&#7893;ng s&#7889; thu&#7871;
+            &#273;√£ khai t&#7841;i ch&#7881; ti√™u [28a] v√† [28b] c&#7911;a c√°c
+            T&#7901; khai m&#7851;u s&#7889; 02/GTGT./.</span
+          ></i
+        >
+      </p>
+    </div>
+  </body>
 </html>

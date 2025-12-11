@@ -2,7 +2,7 @@
   "declaration_type": "01_GTGT_2021",
   "meta": {
     "first_time": "X",
-    "revision_number": ""
+    "revision_number": "3"
   },
   "tax_period": {
     "type": "month",
@@ -11,13 +11,13 @@
   },
   "taxpayer": {
     "name": "CÔNG TY CỔ PHẦN CÔNG NGHỆ MỚI",
-    "tax_code": "0101234567",
+    "tax_code": "1234567891234",
     "address": "Tầng 1, Tòa nhà Tech, Quận Cầu Giấy, Hà Nội",
     "phone": "0988777666"
   },
   "agency": {
     "name": "ĐẠI LÝ THUẾ ABC",
-    "tax_code": "0209876543",
+    "tax_code": "1234567891234",
     "contract_number": "123/HDL-2024",
     "contract_date": "01/01/2024"
   },
