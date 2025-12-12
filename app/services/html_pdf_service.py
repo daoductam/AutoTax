@@ -69,7 +69,7 @@ def generate_01gtgt_pdf_from_html(
 
     # 2. Load template HTML (File cũ của bạn)
     try:
-        template = env.get_template("01_GTGT_2021.html")
+        template = env.get_template("01_GTGT_2021_template_v4.html")
     except Exception as e:
         print(f"Lỗi không tìm thấy template tại: {TEMPLATE_DIR}")
         raise e

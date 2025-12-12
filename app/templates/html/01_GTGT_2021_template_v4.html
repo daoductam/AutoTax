@@ -365,7 +365,7 @@
         align="center"
         style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
       >
-        <b>&#272;&#7897;c l&#7853;p - T&#7921; do - H&#7841;nh phúc</b>
+        <b>Độc lập - Tự do - Hạnh phúc</b>
       </p>
 
       <p
@@ -381,10 +381,7 @@
           text-indent: -0.15pt;
         "
       >
-        <b
-          ><span style="font-size: 13pt"
-            >T&#7900; KHAI THU&#7870; GIÁ TR&#7882; GIA T&#258;NG</span
-          ></b
+        <b><span style="font-size: 13pt">TỜ KHAI THUẾ GIÁ TRỊ GIA TĂNG</span></b
         ><span
           style="
             position: absolute;
@@ -398,7 +395,7 @@
           ><img
             width="1"
             height="3"
-            src="01_GTGT_2021_template_files/image002.png"
+            src="01_GTGT_2021_template_v4_files/image002.png"
         /></span>
       </p>
 
@@ -415,10 +412,8 @@
       >
         <i
           ><span style="font-size: 13pt; color: black"
-            >(Áp d&#7909;ng &#273;&#7889;i v&#7899;i ng&#432;&#7901;i n&#7897;p
-            thu&#7871; tính thu&#7871; theo ph&#432;&#417;ng pháp kh&#7845;u
-            tr&#7915; có ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
-            doanh)</span
+            >(Áp dụng đối với người nộp thuế tính thuế theo phương pháp khấu trừ
+            có hoạt động sản xuất kinh doanh)</span
           ></i
         >
       </p>
@@ -439,8 +434,7 @@
       >
         <b><span style="font-size: 13pt; color: black">[01a]</span></b
         ><span style="font-size: 13pt; color: black">
-          Tên ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh:
-          {{F_01a_ten_hoat_dong_sxkd}}</span
+          Tên hoạt động sản xuất kinh doanh: {{F_01a_ten_hoat_dong_sxkd}}</span
         >
       </p>
 
@@ -457,7 +451,7 @@
       >
         <b><span style="font-size: 13pt; color: black">[01b]</span></b
         ><span style="font-size: 13pt; color: black">
-          K&#7923; tính thu&#7871;: {{F_01b_ky_tinh_thue}}</span
+          Kỳ tính thuế: {{F_01b_ky_tinh_thue}}</span
         >
       </p>
 
@@ -485,9 +479,7 @@
                 "
               >
                 <b><span style="font-size: 13pt">[02]</span></b
-                ><span style="font-size: 13pt">
-                  L&#7847;n &#273;&#7847;u:  </span
-                > {{F_02_lan_dau}}
+                ><span style="font-size: 13pt"> Lần đầu: </span>{{F_02_lan_dau}}
               </p>
             </td>
             <td
@@ -508,9 +500,8 @@
                 "
               >
                 <b><span style="font-size: 13pt">[03]</span></b
-                ><span style="font-size: 13pt">
-                  B&#7893; sung l&#7847;n th&#7913;: </span
-                > {{F_03_bo_sung_lan_thu}}
+                ><span style="font-size: 13pt"> Bổ sung lần thứ: </span
+                >{{F_03_bo_sung_lan_thu}}
               </p>
             </td>
           </tr>
@@ -527,11 +518,7 @@
           text-indent: -0.15pt;
         "
       >
-        <b
-          ><span style="font-size: 13pt"
-            >[04] Tên ng&#432;&#7901;i n&#7897;p thu&#7871;:</span
-          ></b
-        >
+        <b><span style="font-size: 13pt">[04] Tên người nộp thuế: </span></b>
         {{F_04_ten_nguoi_nop_thue}}
       </p>
 
@@ -582,8 +569,8 @@
       >
         <b
           ><span style="font-size: 13pt"
-            >[06] Tên &#273;&#7841;i lý thu&#7871; (n&#7871;u có):</span
-          ></b
+            >[06] Tên đại lý thuế (nếu có):
+          </span></b
         >
         {{F_06_ten_dai_ly_thue}}
       </p>
@@ -592,7 +579,7 @@
         class="MsoNormal"
         style="margin: 6pt 0; display: flex; align-items: center"
       >
-        <b><span style="font-size: 13pt">[05]</span></b>
+        <b><span style="font-size: 13pt">[07]</span></b>
         <span style="font-size: 13pt; margin-right: 10px"
           >&nbsp;Mã số thuế:
         </span>
@@ -622,7 +609,6 @@
           {% endfor %}
         </span>
       </p>
-
       <p
         class="MsoNormal"
         style="
@@ -633,8 +619,8 @@
           text-indent: -0.1pt;
         "
       >
-        <b>[08]</b> H&#7907;p &#273;&#7891;ng &#273;&#7841;i lý thu&#7871;:
-        S&#7889; {{F_08_so_hop_dong_dai_ly}} ngày {{F_08_ngay_hop_dong_dai_ly}}
+        <b>[08]</b> Hợp đồng đại lý thuế: Số {{F_08_so_hop_dong_dai_ly}} ngày
+        {{F_08_ngay_hop_dong_dai_ly}}
       </p>
 
       <p
@@ -647,10 +633,8 @@
           text-indent: -0.1pt;
         "
       >
-        <b>[09]</b> Tên &#273;&#417;n v&#7883; ph&#7909;
-        thu&#7897;c/&#273;&#7883;a &#273;i&#7875;m kinh doanh c&#7911;a
-        ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh khác
-        t&#7881;nh n&#417;i &#273;óng tr&#7909; s&#7903; chính:
+        <b>[09]</b> Tên đơn vị phụ thuộc/địa điểm kinh doanh của hoạt động sản
+        xuất kinh doanh khác tỉnh nơi đóng trụ sở chính:
         {{F_09_ten_don_vi_phu_thuoc}}
       </p>
 
@@ -664,8 +648,7 @@
           text-indent: -0.1pt;
         "
       >
-        <b>[10]</b> Mã s&#7889; thu&#7871; &#273;&#417;n v&#7883; ph&#7909;
-        thu&#7897;c/Mã s&#7889; &#273;&#7883;a &#273;i&#7875;m kinh doanh:
+        <b>[10]</b> Mã số thuế đơn vị phụ thuộc/Mã số địa điểm kinh doanh:
         {{F_10_mst_don_vi_phu_thuoc}}
       </p>
 
@@ -681,9 +664,8 @@
       >
         <b><span style="font-size: 13pt">[11]</span></b
         ><span style="font-size: 13pt">
-          &#272;&#7883;a ch&#7881; n&#417;i có ho&#7841;t &#273;&#7897;ng
-          s&#7843;n xu&#7845;t kinh doanh khác t&#7881;nh n&#417;i &#273;óng
-          tr&#7909; s&#7903; chính:</span
+          Địa chỉ nơi có hoạt động sản xuất kinh doanh khác tỉnh nơi đóng trụ sở
+          chính:</span
         >
       </p>
 
@@ -697,9 +679,8 @@
           text-indent: -0.1pt;
         "
       >
-              [11a] Ph&#432;&#7901;ng/xã {{F_11a_phuong_xa}}     [11b]
-        Qu&#7853;n/Huy&#7879;n {{F_11b_quan_huyen}}  [11c] T&#7881;nh/Thành
-        ph&#7889; {{F_11c_tinh_thanh_pho}}
+              [11a] Phường/xã {{F_11a_phuong_xa}}      [11b] Quận/Huyện
+        {{F_11b_quan_huyen}}  [11c] Tỉnh/Thành phố {{F_11c_tinh_thanh_pho}}
       </p>
 
       <p
@@ -729,12 +710,7 @@
           text-indent: -0.15pt;
         "
       >
-        <i
-          ><span style="font-size: 13pt"
-            >&#272;&#417;n v&#7883; ti&#7873;n: &#272;&#7891;ng Vi&#7879;t
-            Nam</span
-          ></i
-        >
+        <i><span style="font-size: 13pt">Đơn vị tiền: Đồng Việt Nam</span></i>
       </p>
 
       <table
@@ -791,7 +767,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">Ch&#7881; tiêu</span></b>
+              <b><span style="font-size: 13pt">Chỉ tiêu</span></b>
             </p>
           </td>
           <td
@@ -816,9 +792,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Giá tr&#7883; hàng hóa, d&#7883;ch v&#7909;<br />
-                  (ch&#432;a có thu&#7871; giá tr&#7883; gia t&#259;ng)</span
-                ></b
+                  >Giá trị hàng hóa, dịch vụ (chưa có thuế giá trị gia tăng)
+                </span></b
               >
             </p>
           </td>
@@ -842,11 +817,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b
-                ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng
-                </span></b
-              >
+              <b><span style="font-size: 13pt">Thuế giá trị gia tăng </span></b>
             </p>
           </td>
         </tr>
@@ -899,12 +870,9 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Không phát sinh ho&#7841;t &#273;&#7897;ng mua, bán trong
-                  k&#7923;</span
+                  >Không phát sinh hoạt động mua, bán trong kỳ</span
                 ></b
-              ><span style="font-size: 13pt">
-                (&#273;ánh d&#7845;u &quot;X&quot;)</span
-              >
+              ><span style="font-size: 13pt"> (đánh dấu "X")</span>
             </p>
           </td>
           <td
@@ -932,7 +900,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[21]</span></b> {{F_21}}
+              <b><span style="font-size: 13pt">[21]</span></b>
             </p>
           </td>
           <td
@@ -950,13 +918,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_21}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
           <td
@@ -1031,9 +995,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng còn
-                  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; k&#7923;
-                  tr&#432;&#7899;c chuy&#7875;n sang</span
+                  >Thuế giá trị gia tăng còn được khấu trừ kỳ trước chuyển
+                  sang</span
                 ></b
               >
             </p>
@@ -1063,7 +1026,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[22]</span></b> {{F_22}}
+              <b><span style="font-size: 13pt">[22]</span></b>
             </p>
           </td>
           <td
@@ -1087,7 +1050,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <span style="font-size: 13pt">&nbsp;</span>
+              <span style="font-size: 13pt">&nbsp;</span>{{F_22}}
             </p>
           </td>
         </tr>
@@ -1141,8 +1104,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Kê khai thu&#7871; giá tr&#7883; gia t&#259;ng ph&#7843;i
-                  n&#7897;p ngân sách nhà n&#432;&#7899;c</span
+                  >Kê khai thuế giá trị gia tăng phải nộp ngân sách nhà
+                  nước</span
                 ></b
               >
             </p>
@@ -1198,7 +1161,7 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Hàng hoá, d&#7883;ch v&#7909; mua vào trong k&#7923;</span
+                  >Hàng hoá, dịch vụ mua vào trong kỳ</span
                 ></b
               >
             </p>
@@ -1249,8 +1212,8 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Giá tr&#7883; và thu&#7871; giá tr&#7883; gia t&#259;ng
-                c&#7911;a hàng hóa, d&#7883;ch v&#7909; mua vào</span
+                >Giá trị và thuế giá trị gia tăng của hàng hóa, dịch vụ mua
+                vào</span
               >
             </p>
           </td>
@@ -1279,7 +1242,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[23]</span></b> {{F_23}}
+              <b><span style="font-size: 13pt">[23]</span></b>
             </p>
           </td>
           <td
@@ -1297,13 +1260,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <span style="font-size: 13pt">&nbsp;</span>
+              {{F_23}}<span style="font-size: 13pt">&nbsp;</span>
             </p>
           </td>
           <td
@@ -1331,7 +1290,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[24]</span></b> {{F_24}}
+              <b><span style="font-size: 13pt">[24]</span></b>
             </p>
           </td>
           <td
@@ -1355,7 +1314,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <span style="font-size: 13pt">&nbsp;</span>
+              <span style="font-size: 13pt">&nbsp;</span>{{F_24}}
             </p>
           </td>
         </tr>
@@ -1404,8 +1363,7 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Trong &#273;ó: hàng hóa, d&#7883;ch v&#7909; nh&#7853;p
-                kh&#7849;u</span
+                >Trong đó: hàng hóa, dịch vụ nhập khẩu</span
               >
             </p>
           </td>
@@ -1434,7 +1392,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[23a]</span></b> {{F_23a}}
+              <b><span style="font-size: 13pt">[23a]</span></b>
             </p>
           </td>
           <td
@@ -1458,7 +1416,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_23a}}
             </p>
           </td>
           <td
@@ -1486,7 +1445,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[24a]</span></b> {{F_24a}}
+              <b><span style="font-size: 13pt">[24a]</span></b>
             </p>
           </td>
           <td
@@ -1510,7 +1469,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_24a}}
             </p>
           </td>
         </tr>
@@ -1559,9 +1519,8 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Thu&#7871; giá tr&#7883; gia t&#259;ng c&#7911;a hàng hóa,
-                d&#7883;ch v&#7909; mua vào &#273;&#432;&#7907;c kh&#7845;u
-                tr&#7915; k&#7923; này</span
+                >Thuế giá trị gia tăng của hàng hóa, dịch vụ mua vào được khấu
+                trừ kỳ này</span
               >
             </p>
           </td>
@@ -1590,7 +1549,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[25]</span></b> {{F_25}}
+              <b><span style="font-size: 13pt">[25]</span></b>
             </p>
           </td>
           <td
@@ -1608,13 +1567,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <span style="font-size: 13pt">&nbsp;</span>
+              {{F_25}}<span style="font-size: 13pt">&nbsp;</span>
             </p>
           </td>
         </tr>
@@ -1668,7 +1623,7 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Hàng hoá, d&#7883;ch v&#7909; bán ra trong k&#7923;</span
+                  >Hàng hoá, dịch vụ bán ra trong kỳ</span
                 ></b
               >
             </p>
@@ -1720,8 +1675,7 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Hàng hóa, d&#7883;ch v&#7909; bán ra không ch&#7883;u
-                  thu&#7871; giá tr&#7883; gia t&#259;ng
+                  >Hàng hóa, dịch vụ bán ra không chịu thuế giá trị gia tăng
                 </span></b
               >
             </p>
@@ -1751,7 +1705,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[26]</span></b> {{F_26}}
+              <b><span style="font-size: 13pt">[26]</span></b>
             </p>
           </td>
           <td
@@ -1775,7 +1729,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_26}}
             </p>
           </td>
           <td
@@ -1850,9 +1805,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Hàng hóa, d&#7883;ch v&#7909; bán ra ch&#7883;u thu&#7871;
-                  giá tr&#7883; gia t&#259;ng ([27]=[29]+[30]+[32]+[32a];
-                  [28]=[31]+[33])</span
+                  >Hàng hóa, dịch vụ bán ra chịu thuế giá trị gia tăng
+                  ([27]=[29]+[30]+[32]+[32a]; [28]=[31]+[33])</span
                 ></b
               >
             </p>
@@ -1882,7 +1836,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[27]</span></b> {{F_27}}
+              <b><span style="font-size: 13pt">[27]</span></b>
             </p>
           </td>
           <td
@@ -1900,13 +1854,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_27}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
           <td
@@ -1934,7 +1884,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[28]</span></b> {{F_28}}
+              <b><span style="font-size: 13pt">[28]</span></b>
             </p>
           </td>
           <td
@@ -1958,7 +1908,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_28}}
             </p>
           </td>
         </tr>
@@ -2007,8 +1958,7 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Hàng hoá, d&#7883;ch v&#7909; bán ra ch&#7883;u thu&#7871;
-                su&#7845;t 0%</span
+                >Hàng hoá, dịch vụ bán ra chịu thuế suất 0%</span
               >
             </p>
           </td>
@@ -2037,7 +1987,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[29]</span></b> {{F_29}}
+              <b><span style="font-size: 13pt">[29]</span></b>
             </p>
           </td>
           <td
@@ -2061,7 +2011,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_29}}
             </p>
           </td>
           <td
@@ -2135,8 +2086,7 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Hàng hoá, d&#7883;ch v&#7909; bán ra ch&#7883;u thu&#7871;
-                su&#7845;t 5%</span
+                >Hàng hoá, dịch vụ bán ra chịu thuế suất 5%</span
               >
             </p>
           </td>
@@ -2165,7 +2115,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[30]</span></b> {{F_30}}
+              <b><span style="font-size: 13pt">[30]</span></b>
             </p>
           </td>
           <td
@@ -2189,7 +2139,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_30}}
             </p>
           </td>
           <td
@@ -2217,7 +2168,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[31]</span></b> {{F_31}}
+              <b><span style="font-size: 13pt">[31]</span></b>
             </p>
           </td>
           <td
@@ -2241,7 +2192,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_31}}
             </p>
           </td>
         </tr>
@@ -2290,8 +2242,7 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Hàng hoá, d&#7883;ch v&#7909; bán ra ch&#7883;u thu&#7871;
-                su&#7845;t 10%</span
+                >Hàng hoá, dịch vụ bán ra chịu thuế suất 10%</span
               >
             </p>
           </td>
@@ -2320,7 +2271,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[32]</span></b> {{F_32}}
+              <b><span style="font-size: 13pt">[32]</span></b>
             </p>
           </td>
           <td
@@ -2338,13 +2289,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_32}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
           <td
@@ -2372,7 +2319,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[33]</span></b> {{F_33}}
+              <b><span style="font-size: 13pt">[33]</span></b>
             </p>
           </td>
           <td
@@ -2396,7 +2343,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_33}}
             </p>
           </td>
         </tr>
@@ -2445,8 +2393,7 @@
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Hàng hoá, d&#7883;ch v&#7909; bán ra không tính
-                thu&#7871;</span
+                >Hàng hoá, dịch vụ bán ra không tính thuế</span
               >
             </p>
           </td>
@@ -2475,7 +2422,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[32a]</span></b> {{F_32a}}
+              <b><span style="font-size: 13pt">[32a]</span></b>
             </p>
           </td>
           <td
@@ -2493,13 +2440,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_32a}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
           <td
@@ -2574,9 +2517,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >T&#7893;ng doanh thu và thu&#7871; giá tr&#7883; gia
-                  t&#259;ng c&#7911;a hàng hóa, d&#7883;ch v&#7909; bán ra
-                  ([34]=[26]+[27]; [35]=[28])</span
+                  >Tổng doanh thu và thuế giá trị gia tăng của hàng hóa, dịch vụ
+                  bán ra ([34]=[26]+[27]; [35]=[28])</span
                 ></b
               >
             </p>
@@ -2606,7 +2548,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[34]</span></b> {{F_34}}
+              <b><span style="font-size: 13pt">[34]</span></b>
             </p>
           </td>
           <td
@@ -2624,13 +2566,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_34}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
           <td
@@ -2658,7 +2596,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[35]</span></b> {{F_35}}
+              <b><span style="font-size: 13pt">[35]</span></b>
             </p>
           </td>
           <td
@@ -2682,7 +2620,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_35}}
             </p>
           </td>
         </tr>
@@ -2732,8 +2671,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng phát sinh trong
-                  k&#7923; ([36]=[35]-[25])</span
+                  >Thuế giá trị gia tăng phát sinh trong kỳ
+                  ([36]=[35]-[25])</span
                 ></b
               >
             </p>
@@ -2763,7 +2702,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[36]</span></b> {{F_36}}
+              <b><span style="font-size: 13pt">[36]</span></b>
             </p>
           </td>
           <td
@@ -2787,7 +2726,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_36}}
             </p>
           </td>
         </tr>
@@ -2841,10 +2781,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >&#272;i&#7873;u ch&#7881;nh t&#259;ng, gi&#7843;m thu&#7871;
-                  giá tr&#7883; gia t&#259;ng còn &#273;&#432;&#7907;c
-                  kh&#7845;u tr&#7915; c&#7911;a các k&#7923;
-                  tr&#432;&#7899;c</span
+                  >Điều chỉnh tăng, giảm thuế giá trị gia tăng còn được khấu trừ
+                  của các kỳ trước</span
                 ></b
               >
             </p>
@@ -2894,9 +2832,7 @@
               class="MsoNormal"
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
-              <span style="font-size: 13pt"
-                >&#272;i&#7873;u ch&#7881;nh gi&#7843;m
-              </span>
+              <span style="font-size: 13pt">Điều chỉnh giảm </span>
             </p>
           </td>
           <td
@@ -2924,7 +2860,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[37]</span></b> {{F_37}}
+              <b><span style="font-size: 13pt">[37]</span></b>
             </p>
           </td>
           <td
@@ -2948,7 +2884,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <span style="font-size: 13pt">&nbsp;</span>
+              <span style="font-size: 13pt">&nbsp;</span>{{F_37}}
             </p>
           </td>
         </tr>
@@ -2996,9 +2932,7 @@
               class="MsoNormal"
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
-              <span style="font-size: 13pt"
-                >&#272;i&#7873;u ch&#7881;nh t&#259;ng
-              </span>
+              <span style="font-size: 13pt">Điều chỉnh tăng </span>
             </p>
           </td>
           <td
@@ -3100,8 +3034,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng nh&#7853;n bàn giao
-                  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; trong k&#7923;</span
+                  >Thuế giá trị gia tăng nhận bàn giao được khấu trừ trong
+                  kỳ</span
                 ></b
               >
             </p>
@@ -3131,7 +3065,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[39a]</span></b> {{F_39a}}
+              <b><span style="font-size: 13pt">[39a]</span></b>
             </p>
           </td>
           <td
@@ -3155,7 +3089,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <span style="font-size: 13pt">&nbsp;</span>
+              <span style="font-size: 13pt">&nbsp;</span>{{F_39a}}
             </p>
           </td>
         </tr>
@@ -3209,9 +3143,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Xác &#273;&#7883;nh ngh&#297;a v&#7909; thu&#7871; giá
-                  tr&#7883; gia t&#259;ng ph&#7843;i n&#7897;p trong
-                  k&#7923;:</span
+                  >Xác định nghĩa vụ thuế giá trị gia tăng phải nộp trong
+                  kỳ:</span
                 ></b
               >
             </p>
@@ -3267,18 +3200,17 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng ph&#7843;i n&#7897;p
-                  c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
-                  doanh trong k&#7923;</span
+                  >Thuế giá trị gia tăng phải nộp của hoạt động sản xuất kinh
+                  doanh trong kỳ</span
                 ></b
               >
             </p>
             <p class="MsoNormal" style="margin-left: 0in; text-indent: -0.1pt">
               <b
                 ><span style="font-size: 13pt; font-family: 'Gungsuh', serif"
-                  >{[40a]=([36]-[22]+[37]-[38]-[39a]) &#8805; 0}</span
-                ></b
-              >
+                  >{[40a]=([36]-[22]+[37]-[38]-[39a]) ≥ 0}</span
+                >
+              </b>
             </p>
           </td>
           <td
@@ -3306,7 +3238,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[40a]</span></b> {{F_40a}}
+              <b><span style="font-size: 13pt">[40a]</span></b>
             </p>
           </td>
           <td
@@ -3330,7 +3262,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_40a}}
             </p>
           </td>
         </tr>
@@ -3384,11 +3317,9 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng mua vào c&#7911;a
-                  d&#7921; án &#273;&#7847;u t&#432; &#273;&#432;&#7907;c bù
-                  tr&#7915; v&#7899;i thu&#7871; GTGT còn ph&#7843;i n&#7897;p
-                  c&#7911;a ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh
-                  doanh cùng k&#7923; tính thu&#7871; ([40b]&#8804;[40a])</span
+                  >Thuế giá trị gia tăng mua vào của dự án đầu tư được bù trừ
+                  với thuế GTGT còn phải nộp của hoạt động sản xuất kinh doanh
+                  cùng kỳ tính thuế ([40b]≤[40a])</span
                 ></b
               >
             </p>
@@ -3418,7 +3349,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[40b]</span></b> {{F_40b}}
+              <b><span style="font-size: 13pt">[40b]</span></b>
             </p>
           </td>
           <td
@@ -3442,7 +3373,8 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_40b}}
             </p>
           </td>
         </tr>
@@ -3492,8 +3424,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng còn ph&#7843;i
-                  n&#7897;p trong k&#7923; ([40]=[40a]-[40b])</span
+                  >Thuế giá trị gia tăng còn phải nộp trong kỳ
+                  ([40]=[40a]-[40b])</span
                 ></b
               >
             </p>
@@ -3523,7 +3455,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[40]</span></b> {{F_40}}
+              <b><span style="font-size: 13pt">[40]</span></b>
             </p>
           </td>
           <td
@@ -3541,13 +3473,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_40}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
         </tr>
@@ -3597,9 +3525,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng ch&#432;a kh&#7845;u
-                  tr&#7915; h&#7871;t k&#7923; này
-                  {[41]=([36]-[22]+[37]-[38]-[39a]) &#8804; 0}</span
+                  >Thuế giá trị gia tăng chưa khấu trừ hết kỳ này
+                  {[41]=([36]-[22]+[37]-[38]-[39a]) ≤ 0}</span
                 ></b
               >
             </p>
@@ -3629,7 +3556,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[41]</span></b> {{F_41}}
+              <b><span style="font-size: 13pt">[41]</span></b>
             </p>
           </td>
           <td
@@ -3647,13 +3574,9 @@
             <p
               class="MsoNormal"
               align="center"
-              style="
-                margin-left: 0.05pt;
-                text-align: center;
-                text-indent: -0.15pt;
-              "
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_41}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
         </tr>
@@ -3703,8 +3626,7 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng &#273;&#7873;
-                  ngh&#7883; hoàn ([42] &#8804; [41])</span
+                  >Thuế giá trị gia tăng đề nghị hoàn ([42] &#8804; [41])</span
                 ></b
               >
             </p>
@@ -3734,7 +3656,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[42]</span></b> {{F_42}}
+              <b><span style="font-size: 13pt">[42]</span></b>
             </p>
           </td>
           <td
@@ -3751,9 +3673,10 @@
           >
             <p
               class="MsoNormal"
-              style="margin-left: 0.05pt; text-indent: -0.15pt"
+              align="center"
+              style="margin-left: 0in; text-align: center; text-indent: -0.1pt"
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              {{F_42}}<b><span style="font-size: 13pt">&nbsp;</span></b>
             </p>
           </td>
         </tr>
@@ -3803,9 +3726,8 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >Thu&#7871; giá tr&#7883; gia t&#259;ng còn
-                  &#273;&#432;&#7907;c kh&#7845;u tr&#7915; chuy&#7875;n
-                  k&#7923; sau ([43]=[41]-[42])</span
+                  >Thuế giá trị gia tăng còn được khấu trừ chuyển kỳ sau
+                  ([43]=[41]-[42])</span
                 ></b
               >
             </p>
@@ -3835,7 +3757,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">[43]</span></b> {{F_43}}
+              <b><span style="font-size: 13pt">[43]</span></b>
             </p>
           </td>
           <td
@@ -3859,19 +3781,20 @@
                 text-indent: -0.15pt;
               "
             >
-              <b><span style="font-size: 13pt">&nbsp;</span></b>
+              <b><span style="font-size: 13pt">&nbsp;</span></b
+              >{{F_43}}
             </p>
           </td>
         </tr>
         <tr height="0">
           <td width="39" style="border: none"></td>
-          <td width="344" style="border: none"></td>
+          <td width="229" style="border: none"></td>
+          <td width="36" style="border: none"></td>
+          <td width="82" style="border: none"></td>
+          <td width="44" style="border: none"></td>
+          <td width="89" style="border: none"></td>
           <td width="71" style="border: none"></td>
-          <td width="19" style="border: none"></td>
-          <td width="78" style="border: none"></td>
-          <td width="33" style="border: none"></td>
-          <td width="79" style="border: none"></td>
-          <td width="19" style="border: none"></td>
+          <td width="90" style="border: none"></td>
         </tr>
       </table>
 
@@ -3901,11 +3824,8 @@
         "
       >
         <span style="font-size: 13pt"
-          >Tôi cam &#273;oan s&#7889; li&#7879;u khai trên là &#273;úng và
-          ch&#7883;u trách nhi&#7879;m tr&#432;&#7899;c pháp lu&#7853;t v&#7873;
-          s&#7889; li&#7879;u &#273;ã khai./.<span style="color: black"
-            >&nbsp;</span
-          ></span
+          >Tôi cam đoan số liệu khai trên là đúng và chịu trách nhiệm trước pháp
+          luật về số liệu đã khai./.</span
         >
       </p>
 
@@ -3933,24 +3853,20 @@
               class="MsoNormal"
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
-              <b
-                ><span style="font-size: 13pt"
-                  >NHÂN VIÊN &#272;&#7840;I LÝ THU&#7870;</span
-                ></b
-              >
+              <b><span style="font-size: 13pt">NHÂN VIÊN ĐẠI LÝ THUẾ</span></b>
             </p>
             <p
               class="MsoNormal"
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
-              <span style="font-size: 13pt">H&#7885; và tên:.......</span>
+              <span style="font-size: 13pt">Họ và tên:.......</span>
             </p>
             <p
               class="MsoNormal"
               style="margin-left: 0.05pt; text-indent: -0.15pt"
             >
               <span style="font-size: 13pt"
-                >Ch&#7913;ng ch&#7881; hành ngh&#7873; s&#7889;:.......</span
+                >Chứng chỉ hành nghề số:.......</span
               >
             </p>
           </td>
@@ -3970,7 +3886,7 @@
             >
               <i
                 ><span style="font-size: 13pt"
-                  >..., ngày....... tháng....... n&#259;m.......</span
+                  >..., ngày....... tháng....... năm.......</span
                 ></i
               >
             </p>
@@ -3983,11 +3899,7 @@
                 text-indent: -0.15pt;
               "
             >
-              <b
-                ><span style="font-size: 13pt"
-                  >NG&#431;&#7900;I N&#7896;P THU&#7870; ho&#7863;c
-                </span></b
-              >
+              <b><span style="font-size: 13pt">NGƯỜI NỘP THUẾ hoặc </span></b>
             </p>
             <p
               class="MsoNormal"
@@ -4000,8 +3912,7 @@
             >
               <b
                 ><span style="font-size: 13pt"
-                  >&#272;&#7840;I DI&#7878;N H&#7906;P PHÁP C&#7910;A
-                  NG&#431;&#7900;I N&#7896;P THU&#7870;</span
+                  >ĐẠI DIỆN HỢP PHÁP CỦA NGƯỜI NỘP THUẾ</span
                 ></b
               >
             </p>
@@ -4016,9 +3927,8 @@
             >
               <span style="font-size: 13pt"
                 >(<i
-                  >Ch&#7919; ký, ghi rõ h&#7885; tên; ch&#7913;c v&#7909; và
-                  &#273;óng d&#7845;u (n&#7871;u có)/Ký &#273;i&#7879;n
-                  t&#7917;</i
+                  >Chữ ký, ghi rõ họ tên; chức vụ và đóng dấu (nếu có)/Ký điện
+                  tử</i
                 >)</span
               >
             </p>
@@ -4044,8 +3954,7 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >1. Ch&#7881; tiêu [01a]: Ng&#432;&#7901;i n&#7897;p thu&#7871;
-            l&#7921;a ch&#7885;n m&#7897;t trong các ho&#7841;t &#273;&#7897;ng
+            >1. Chỉ tiêu [01a]: Người nộp thuế lựa chọn một trong các hoạt động
             sau:</span
           ></i
         >
@@ -4057,8 +3966,7 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >- Ho&#7841;t &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh thông
-            th&#432;&#7901;ng</span
+            >- Hoạt động sản xuất kinh doanh thông thường</span
           ></i
         >
       </p>
@@ -4069,8 +3977,7 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >- Ho&#7841;t &#273;&#7897;ng x&#7893; s&#7889; ki&#7871;n
-            thi&#7871;t, x&#7893; s&#7889; &#273;i&#7879;n toán</span
+            >- Hoạt động xổ số kiến thiết, xổ số điện toán</span
           ></i
         >
       </p>
@@ -4081,8 +3988,7 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >- Ho&#7841;t &#273;&#7897;ng th&#259;m dò khai thác d&#7847;u
-            khí</span
+            >- Hoạt động thăm dò khai thác dầu khí</span
           ></i
         >
       </p>
@@ -4093,10 +3999,8 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >- D&#7921; án &#273;&#7847;u t&#432; c&#417; s&#7903; h&#7841;
-            t&#7847;ng, nhà &#273;&#7875; chuy&#7875;n nh&#432;&#7907;ng khác
-            &#273;&#7883;a bàn t&#7881;nh n&#417;i &#273;óng tr&#7909; s&#7903;
-            chính</span
+            >- Dự án đầu tư cơ sở hạ tầng, nhà để chuyển nhượng khác địa bàn
+            tỉnh nơi đóng trụ sở chính</span
           ></i
         >
       </p>
@@ -4107,8 +4011,8 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >- Nhà máy s&#7843;n xu&#7845;t &#273;i&#7879;n khác &#273;&#7883;a
-            bàn t&#7881;nh n&#417;i &#273;óng tr&#7909; s&#7903; chính.</span
+            >- Nhà máy sản xuất điện khác địa bàn tỉnh nơi đóng trụ sở
+            chính.</span
           ></i
         >
       </p>
@@ -4127,26 +4031,16 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >                   2. Ch&#7881; tiêu [09], [10], [11]: Khai thông
-            tin c&#7911;a &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
-            &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;óng t&#7841;i
-            &#273;&#7883;a ph&#432;&#417;ng khác t&#7881;nh n&#417;i &#273;óng
-            tr&#7909; s&#7903; chính &#273;&#7889;i v&#7899;i các
-            tr&#432;&#7901;ng h&#7907;p quy &#273;&#7883;nh t&#7841;i
-            &#273;i&#7875;m b, c kho&#7843;n 1 &#272;i&#7873;u 11 Ngh&#7883;
-            &#273;&#7883;nh s&#7889; 126/2020/N&#272;-CP ngày 19/10/2020
-            c&#7911;a Chính ph&#7911;. Tr&#432;&#7901;ng h&#7907;p có
-            nhi&#7873;u &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
-            &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;óng trên nhi&#7873;u
-            huy&#7879;n do C&#7909;c Thu&#7871; qu&#7843;n lý thì ch&#7885;n 1
-            &#273;&#417;n v&#7883; &#273;&#7841;i di&#7879;n &#273;&#7875; kê
-            khai vào ch&#7881; tiêu này. Tr&#432;&#7901;ng h&#7907;p có
-            nhi&#7873;u &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c,
-            &#273;&#7883;a &#273;i&#7875;m kinh doanh &#273;óng trên nhi&#7873;u
-            huy&#7879;n do Chi c&#7909;c Thu&#7871; khu v&#7921;c qu&#7843;n lý
-            thì ch&#7885;n 1 &#273;&#417;n v&#7883; &#273;&#7841;i di&#7879;n
-            cho huy&#7879;n do Chi c&#7909;c Thu&#7871; khu v&#7921;c qu&#7843;n
-            lý &#273;&#7875; kê khai vào ch&#7881; tiêu này. 
+            >2. Chỉ tiêu [09], [10], [11]: Khai thông tin của đơn vị phụ thuộc,
+            địa điểm kinh doanh đóng tại địa phương khác tỉnh nơi đóng trụ sở
+            chính đối với các trường hợp quy định tại điểm b, c khoản 1 Điều 11
+            Nghị định số 126/2020/NĐ-CP ngày 19/10/2020 của Chính phủ. Trường
+            hợp có nhiều đơn vị phụ thuộc, địa điểm kinh doanh đóng trên nhiều
+            huyện do Cục Thuế quản lý thì chọn 1 đơn vị đại diện để kê khai vào
+            chỉ tiêu này. Trường hợp có nhiều đơn vị phụ thuộc, địa điểm kinh
+            doanh đóng trên nhiều huyện do Chi cục Thuế khu vực quản lý thì chọn
+            1 đơn vị đại diện cho huyện do Chi cục Thuế khu vực quản lý để kê
+            khai vào chỉ tiêu này.
           </span></i
         >
       </p>
@@ -4157,11 +4051,9 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >3. Ch&#7881; tiêu [32a]: Khai giá tr&#7883; hàng hóa, d&#7883;ch
-            v&#7909; thu&#7897;c tr&#432;&#7901;ng h&#7907;p không ph&#7843;i kê
-            khai, tính n&#7897;p thu&#7871; giá tr&#7883; gia t&#259;ng theo quy
-            &#273;&#7883;nh c&#7911;a pháp lu&#7853;t thu&#7871; giá tr&#7883;
-            gia t&#259;ng.</span
+            >3. Chỉ tiêu [32a]: Khai giá trị hàng hóa, dịch vụ thuộc trường hợp
+            không phải kê khai, tính nộp thuế giá trị gia tăng theo quy định của
+            pháp luật thuế giá trị gia tăng.</span
           ></i
         >
       </p>
@@ -4172,19 +4064,13 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >4. Ch&#7881; tiêu [37] và [38]: Khai theo s&#7889; thu&#7871;
-            &#273;&#432;&#7907;c kh&#7845;u tr&#7915; &#273;i&#7873;u
-            ch&#7881;nh t&#259;ng/gi&#7843;m t&#7841;i ch&#7881; tiêu II trên
-            T&#7901; khai b&#7893; sung. Riêng tr&#432;&#7901;ng h&#7907;p
-            c&#417; quan thu&#7871;, c&#417; quan có th&#7849;m quy&#7873;n
-            &#273;ã ban hành k&#7871;t lu&#7853;n, quy&#7871;t &#273;&#7883;nh
-            x&#7917; lý v&#7873; thu&#7871; có &#273;i&#7873;u ch&#7881;nh
-            t&#432;&#417;ng &#7913;ng các k&#7923; tính thu&#7871;
-            tr&#432;&#7899;c thì khai vào h&#7891; s&#417; khai thu&#7871;
-            c&#7911;a k&#7923; tính thu&#7871; nh&#7853;n &#273;&#432;&#7907;c
-            k&#7871;t lu&#7853;n, quy&#7871;t &#273;&#7883;nh x&#7917; lý
-            v&#7873; thu&#7871; (không ph&#7843;i khai b&#7893; sung h&#7891;
-            s&#417; khai thu&#7871;).</span
+            >4. Chỉ tiêu [37] và [38]: Khai theo số thuế được khấu trừ điều
+            chỉnh tăng/giảm tại chỉ tiêu II trên Tờ khai bổ sung. Riêng trường
+            hợp cơ quan thuế, cơ quan có thẩm quyền đã ban hành kết luận, quyết
+            định xử lý về thuế có điều chỉnh tương ứng các kỳ tính thuế trước
+            thì khai vào hồ sơ khai thuế của kỳ tính thuế nhận được kết luận,
+            quyết định xử lý về thuế (không phải khai bổ sung hồ sơ khai
+            thuế).</span
           ></i
         >
       </p>
@@ -4195,21 +4081,13 @@
       >
         <i
           ><span style="font-size: 11pt"
-            >5. Ch&#7881; tiêu [39a]: Khai s&#7889; thu&#7871; GTGT còn
-            &#273;&#432;&#7907;c kh&#7845;u tr&#7915; ch&#432;a &#273;&#7873;
-            ngh&#7883; hoàn c&#7911;a d&#7921; án &#273;&#7847;u t&#432;
-            chuy&#7875;n cho ng&#432;&#7901;i n&#7897;p thu&#7871; ti&#7871;p
-            t&#7909;c kh&#7845;u tr&#7915; (là s&#7889; thu&#7871; GTGT còn
-            &#273;&#432;&#7907;c kh&#7845;u tr&#7915;, không &#273;&#7911;
-            &#273;i&#7873;u ki&#7879;n hoàn, không hoàn mà ng&#432;&#7901;i
-            n&#7897;p thu&#7871; &#273;ã kê khai riêng t&#7901; khai thu&#7871;
-            d&#7921; án &#273;&#7847;u t&#432;) khi d&#7921; án &#273;&#7847;u
-            t&#432; &#273;i vào ho&#7841;t &#273;&#7897;ng ho&#7863;c s&#7889;
-            thu&#7871; GTGT còn &#273;&#432;&#7907;c kh&#7845;u tr&#7915;
-            ch&#432;a &#273;&#7873; ngh&#7883; hoàn c&#7911;a ho&#7841;t
-            &#273;&#7897;ng s&#7843;n xu&#7845;t kinh doanh c&#7911;a
-            &#273;&#417;n v&#7883; ph&#7909; thu&#7897;c khi ch&#7845;m
-            d&#7913;t ho&#7841;t &#273;&#7897;ng,…</span
+            >5. Chỉ tiêu [39a]: Khai số thuế GTGT còn được khấu trừ chưa đề nghị
+            hoàn của dự án đầu tư chuyển cho người nộp thuế tiếp tục khấu trừ
+            (là số thuế GTGT còn được khấu trừ, không đủ điều kiện hoàn, không
+            hoàn mà người nộp thuế đã kê khai riêng tờ khai thuế dự án đầu tư)
+            khi dự án đầu tư đi vào hoạt động hoặc số thuế GTGT còn được khấu
+            trừ chưa đề nghị hoàn của hoạt động sản xuất kinh doanh của đơn vị
+            phụ thuộc khi chấm dứt hoạt động,…</span
           ></i
         >
       </p>
@@ -4221,9 +4099,8 @@
         <a name="_heading=h.1fob9te"></a
         ><i
           ><span style="font-size: 11pt"
-            >6. Ch&#7881; tiêu [40b]: Khai t&#7893;ng s&#7889; thu&#7871;
-            &#273;ã khai t&#7841;i ch&#7881; tiêu [28a] và [28b] c&#7911;a các
-            T&#7901; khai m&#7851;u s&#7889; 02/GTGT./.</span
+            >6. Chỉ tiêu [40b]: Khai tổng số thuế đã khai tại chỉ tiêu [28a] và
+            [28b] của các Tờ khai mẫu số 02/GTGT./.</span
           ></i
         >
       </p>
